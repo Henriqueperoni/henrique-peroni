@@ -11,7 +11,7 @@
     align-items: center;
 }
 .red-text {
-    color: #c92424;
+    color: var(--red);
     font-weight: bolder;
 }
 
@@ -22,13 +22,12 @@
 }
 
 h2 {
-    color: #fff;
+    color: var(--off-white);
     font-size: 3rem;
     font-weight: lighter;
 }
 
 .hide {
-    /* background: #1b1b1b; */
     overflow: hidden;
 }
 
@@ -61,4 +60,17 @@ h2 {
 
 .about {
     height: 20vh;
+}
+
+.btn-portfolio {
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #23d997;
+    background: transparent;
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    font-family: 'Inter',sans-serif;
 }

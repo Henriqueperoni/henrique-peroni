@@ -10,8 +10,8 @@
     flex-direction: column;
     align-items: center;
 }
-.intro-message span {
-    color: red;
+.red-text {
+    color: #c92424;
     font-weight: bolder;
 }
 
@@ -25,4 +25,15 @@ h2 {
     color: #fff;
     font-size: 3rem;
     font-weight: lighter;
+}
+
+.hide {
+    background: #1b1b1b;
+    overflow: hidden;
+}
+
+
+.hide .greeting {
+    transform: translateY(-100%);
+    display: inline-block;
 }

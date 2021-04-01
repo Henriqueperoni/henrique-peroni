@@ -9,13 +9,23 @@
     <div class="intro">
         <div class="intro-message">
             <div>
-                <h2><span>H</span>i,</h2>        
-                <h2>I'm <span>H</span>enrique,</h2>
-                <h2><span>S</span>oftware <span>E</span>ngineer.</h2>
+                <h2 class="hide">
+                    <span class="greeting"><span class="red-text">H</span>i,</span>
+                </h2>
+                <h2 class="hide">
+                    <span class="greeting">I'm <span class="red-text">H</span>enrique,</span>
+                </h2>
+                <h2 class="hide">
+                    <span class="greeting"><span class="red-text">S</span>oftware <span class="red-text">E</span>ngineer.</span>
+                </h2>
             </div>
         </div>
         <div class="intro-image">
-            <img src="{{ MEDIA_URL }}intro-image.jpg" alt="Coding">
+            <img src="{{ MEDIA_URL }}coding4.png" alt="Coding">
         </div>
     </div>
+{% endblock %}
+
+{%  block extra_js %}
+    <script src="{% static 'home/js/home.js' %}"></script>
 {% endblock %}

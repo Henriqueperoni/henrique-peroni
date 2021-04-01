@@ -26,10 +26,13 @@
   </head>
   <body>
 
-    {% if messages%}
-        <div class="message-container">
-        </div>
-    {% endif %}
+        {% if messages%}
+            <div class="message-container">
+            </div>
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
 
         <!-- JS block -->
         {% block corejs %}

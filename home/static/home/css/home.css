@@ -28,12 +28,37 @@ h2 {
 }
 
 .hide {
-    background: #1b1b1b;
+    /* background: #1b1b1b; */
     overflow: hidden;
 }
-
 
 .hide .greeting {
     transform: translateY(-100%);
     display: inline-block;
+}
+
+.intro svg {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.path {
+    stroke-dasharray: 2200;
+    stroke-dashoffset: 2200;
+    animation: dash 1s linear forwards;
+    animation-delay: 1s;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1822;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.about {
+    height: 20vh;
 }

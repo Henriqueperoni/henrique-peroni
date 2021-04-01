@@ -7,7 +7,7 @@
 
 :root {
     --red: #c92424;
-    --green: #054205;
+    --green: #24C953;
     --bg-black: #1b1b1b;
     --bg-grey: #282828;
     --off-white: #fafafa;
@@ -19,7 +19,6 @@ body {
 }
 
 /* Navbar */
-
 nav {
     display: flex;
     align-items: center;

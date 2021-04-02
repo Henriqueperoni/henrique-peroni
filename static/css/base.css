@@ -13,15 +13,35 @@
     --off-white: #fafafa;
 }
 
+body {
+    background: var(--bg-black);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.9rem;
+    overflow-x: hidden;
+}
+
 .heading {
     font-family: "Lobster",cursive;
     font-size: 2.5rem;
 }
 
-body {
-    background: var(--bg-black);
-    font-family: 'Montserrat',sans-serif;
-    font-size: 0.9rem;
+.btn {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1.8rem;
+    width: fit-content;
+    border: 3px solid var(--green);
+    background: transparent;
+    color: var(--off-white);
+    opacity: 0;
+    text-decoration: none;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--bg-grey);
 }
 
 /* Navbar */

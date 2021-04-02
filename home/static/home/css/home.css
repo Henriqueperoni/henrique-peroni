@@ -12,19 +12,13 @@
 }
 .red-text {
     color: var(--red);
-    font-weight: bolder;
-}
-
-.intro-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    font-weight: 500;
 }
 
 h2 {
     color: var(--off-white);
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 .hide {
@@ -36,7 +30,13 @@ h2 {
     display: inline-block;
 }
 
-.intro svg {
+.intro-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
     position: absolute;
     left: 0;
     z-index: -1;
@@ -51,33 +51,16 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.btn-portfolio {
-    font-weight: bold;
-    font-size: 1rem;
-    margin-top: 1rem;
-    padding: 1rem 2rem;
-    border: 3px solid var(--green);
-    background: transparent;
-    color: var(--off-white);
-    transition: all .5s ease;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.btn-portfolio:hover {
-    background: var(--bg-grey);
-}
-
 /* About */
 .about-container {
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-bottom: 5rem;
+    min-height: 90vh;
+    position: relative;
 }
 
-.about h2{
+.about > h2{
     display: flex;
     justify-content: center;
 }
@@ -85,17 +68,35 @@ h2 {
 .about-text {
     color: var(--off-white);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 60%;
 }
 
 .about-text p {
-    width: 75%;
+    width: 70%;
     line-height: 1.25rem;
+    text-align: justify;
 }
 
-.about-img {
+.hard-work {
+    width: 40%;
     display: flex;
-    justify-content: center;
-    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hard-work h2 {
+    letter-spacing: 2px;
+    line-height: 4rem;
+}
+
+.about-container svg {
+    max-height: 100%;
+    bottom: 8rem;
+}
+
+.path-polygon {
+    stroke-dasharray: 5500;
+    stroke-dashoffset: 0;
 }

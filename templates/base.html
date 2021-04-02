@@ -17,8 +17,12 @@
     {% block corecss %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lobster&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Lobster&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     {% endblock %} 
 
@@ -52,7 +56,8 @@
 
         <!-- JS block -->
         {% block corejs %}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
             <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
         {% endblock %}
         <!-- Extra JS -->

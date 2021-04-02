@@ -6,12 +6,18 @@
 {% endblock %}
 
 {% block content %}
-    {% for project in projects %}
-        <div class="project">
-            <h2>{{ project.name }}</h2>
-            <img src="{{ project.description_image.url }}" alt="">
-        </div>
-    {% endfor %}
+    <div class="projects">
+        {% for project in projects %}
+            <div class="project">
+                <a href="">
+                    <h2>{{ project.name }}</h2>
+                </a>
+                <a href="">
+                    <img src="{{ project.description_image.url }}" alt="">
+                </a>
+            </div>
+            {% endfor %}
+    </div>
 {% endblock %}
 
 {%  block extra_js %}

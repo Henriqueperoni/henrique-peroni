@@ -1,11 +1,27 @@
-.project {
+body {
     background: var(--off-white);
 }
 
-h2 {
-    color: white !important;
+.projects {
+    padding: 5rem 10rem;
+}
+
+.project {
+    margin-bottom: 5rem;
+}
+
+.project h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    padding-bottom: 1rem;
+    color: var(--bg-grey);
+    display: inline-block;
+}
+
+.project a {
+    text-decoration: none;
 }
 
 img {
-    width: 500px;;
+    width: 100%;
 }

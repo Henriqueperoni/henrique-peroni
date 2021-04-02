@@ -1,0 +1,11 @@
+.project {
+    background: var(--off-white);
+}
+
+h2 {
+    color: white !important;
+}
+
+img {
+    width: 500px;;
+}

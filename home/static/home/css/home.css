@@ -45,21 +45,6 @@ h2 {
 .path {
     stroke-dasharray: 2200;
     stroke-dashoffset: 2200;
-    animation: dash 1s linear forwards;
-    animation-delay: 1s;
-}
-
-@keyframes dash {
-    from {
-        stroke-dashoffset: 1822;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-.about {
-    height: 20vh;
 }
 
 .intro-message > div > h2:nth-child(3) {
@@ -82,4 +67,35 @@ h2 {
 
 .btn-portfolio:hover {
     background: var(--bg-grey);
+}
+
+/* About */
+.about-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.about h2{
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    color: var(--off-white);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.about-text p {
+    width: 75%;
+    line-height: 1.25rem;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }

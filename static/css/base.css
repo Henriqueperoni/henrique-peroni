@@ -13,9 +13,15 @@
     --off-white: #fafafa;
 }
 
+.heading {
+    font-family: "Lobster",cursive;
+    font-size: 2.5rem;
+}
+
 body {
     background: var(--bg-black);
-    font-family: 'Inter',sans-serif;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.9rem;
 }
 
 /* Navbar */

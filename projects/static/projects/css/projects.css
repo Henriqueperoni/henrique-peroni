@@ -1,9 +1,10 @@
 body {
-    background: var(--off-white);
+    
 }
 
 .projects {
     padding: 5rem 10rem;
+    background: var(--off-white);
 }
 
 .project {
@@ -12,8 +13,7 @@ body {
 
 .project h2 {
     font-size: 3rem;
-    font-weight: 200;
-    padding-bottom: 1rem;
+    font-weight: 100;
     color: var(--bg-grey);
     display: inline-block;
 }
@@ -24,4 +24,14 @@ body {
 
 img {
     width: 100%;
+}
+
+.line {
+    height: 0.4rem;
+    background: var(--dark-green);
+    margin: 1rem 0 2rem 0;
+}
+
+.image-wrapper {
+    overflow: hidden;
 }

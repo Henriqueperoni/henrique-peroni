@@ -49,7 +49,7 @@ img {
 }
 
 .project-detail img {
-    max-height: 80vh;
+    max-height: 70vh;
     margin-top: 2rem;
     margin-bottom: 2rem;
     object-fit: cover;
@@ -89,4 +89,9 @@ img {
 .project-detail i:hover {
     color: var(--off-white);
     font-size: 2.25rem;
+}
+
+.project-description p {
+    color: var(--off-white);
+    text-align: justify;
 }

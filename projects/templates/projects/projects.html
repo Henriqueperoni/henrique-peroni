@@ -14,7 +14,7 @@
                 </a>
                 <div class="line"></div>
                 <div class="image-wrapper">
-                    <a href="{% url 'project_detail' project.id %}">
+                    <a href="{% url 'project_detail' project.slug %}">
                         <img src="{{ project.description_image.url }}" alt="">
                     </a>
                 </div>

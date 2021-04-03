@@ -11,7 +11,7 @@ body {
     margin-bottom: 5rem;
 }
 
-.project h2 {
+h2 {
     font-size: 3rem;
     font-weight: 100;
     color: var(--bg-grey);
@@ -34,4 +34,59 @@ img {
 
 .image-wrapper {
     overflow: hidden;
+}
+
+/* Project Detail */
+.project-detail-container {
+    padding: 5rem 10rem;
+}
+
+.project-detail h2{
+    display: flex;
+    justify-content: center;
+    color: var(--off-white);
+    margin-bottom: 2rem;
+}
+
+.project-detail img {
+    max-height: 80vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.btn-live-site {
+    font-weight: bold;
+    font-size: 1rem;
+    width: fit-content;
+    color: var(--bg-grey);
+    background: var(--off-white);
+    border: 2px solid var(--off-white);
+    opacity: 1;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.5s ease 0s;
+}
+
+.btn-live-site:hover {
+    background: var(--bg-grey);
+    color: var(--off-white);
+    border: 2px solid var(--off-white);
+}
+
+.project-detail i {
+    color: var(--off-white);
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.project-detail i:hover {
+    color: var(--off-white);
+    font-size: 2.25rem;
 }

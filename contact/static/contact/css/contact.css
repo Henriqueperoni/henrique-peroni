@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .glass {
     background: white;
     min-height: 70vh;
@@ -11,7 +12,15 @@
     background: radial-gradient(ellipse, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     border-radius: 2rem;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     backdrop-filter: blur(1rem);
+}
+
+form {
+    width: 60%;
+    max-width: 500px;
 }
 
 .circle1, .circle2 {
@@ -32,5 +41,23 @@
 .circle2 {
     bottom: 20%;
     left: 20%;
+}
+
+.form-contact {
+    padding: 2rem 0;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 15px 12px;
+    margin: 10px;
+    color: #000;
+    border: 2px solid var(--bg-black);
+    border-radius: 15px;
+    outline: none;
+    background-color: var(--bg-black);
+    font-family: 'Montserrat',sans-serif;
+}
+
+.form-contact:focus {
+    border: 2px solid rgb(129, 129, 129)
 }
 

@@ -6,8 +6,15 @@
 {% endblock %}
 
 {% block content %}
-    <div class="form">
-        <h1>contact me</h1>
+    <div class="form-container">
+        <div class="glass">
+            <form action="">
+                {% csrf_token %}
+                {{ form|crispy }}
+            </form>
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
     </div>
 {% endblock %}
 

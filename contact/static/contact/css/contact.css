@@ -1,5 +1,36 @@
-.form {
-    background: white;
-    height: 80vh;
-    width: 80vh;
+.form-container {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.glass {
+    background: white;
+    min-height: 70vh;
+    width: 60%;
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
+}
+
+.circle1, .circle2 {
+    background: white;
+    background: radial-gradient(ellipse, rgba(201, 36, 36, 1), rgba(201, 36, 36, 0.5));
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    /* box-shadow: 0px 0px 85px 130px rgb(201 36 36 / 100%) */
+}
+
+.circle1 {
+    top: 30%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 20%;
+    left: 20%;
+}
+

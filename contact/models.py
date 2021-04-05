@@ -13,4 +13,3 @@ class Contact(models.Model):
 
     def __str__(self):
         return f'Contact form from {self.name}'
-    

@@ -8,9 +8,14 @@
 {% block content %}
     <div class="form-container">
         <div class="glass">
+            <div class="contact-heading">
+                <h1>Let's Talk</h1>
+                <div class="line"></div>
+            </div>  
             <form action="">
                 {% csrf_token %}
                 {{ form|crispy }}
+                <button  class="btn btn-submit" type="submit">Submit!</button>
             </form>
         </div>
         <div class="circle1"></div>

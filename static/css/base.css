@@ -34,18 +34,20 @@ a {
     font-weight: bold;
     font-size: 1rem;
     margin-top: 1rem;
-    padding: 0.8rem 1.8rem;
     width: fit-content;
-    border: 3px solid var(--green);
+    padding: 0.8rem 1.8rem;
     background: transparent;
     color: var(--off-white);
+    border: 3px solid var(--green);
+    border-radius: 30px;
     opacity: 0;
     transition: all .5s ease;
     cursor: pointer;
 }
 
 .btn:hover {
-    background: var(--bg-grey);
+    background: var(--off-white);
+    color: var(--bg-grey);
 }
 
 /* Navbar */

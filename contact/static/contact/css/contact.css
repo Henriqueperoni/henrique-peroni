@@ -7,23 +7,70 @@
 
 .glass {
     background: white;
-    min-height: 70vh;
-    width: 60%;
+    min-height: 80vh;
+    width: 50%;
     background: radial-gradient(ellipse, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     border-radius: 2rem;
-    z-index: 2;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     backdrop-filter: blur(1rem);
+    z-index: 2;
+}
+
+.glass h1 {
+    font-weight: 600;
+}
+
+.line {
+    height: 4px;
+    border-radius: 20px;
+    background: var(--red);
 }
 
 form {
-    width: 60%;
+    width: 70%;
     max-width: 500px;
 }
 
-.circle1, .circle2 {
+.btn-submit {
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem 1.8rem;
+    width: fit-content;
+    border: 3px solid var(--red);
+    background: transparent;
+    color: var(--bg-black);
+    opacity: 1;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    color: var(--off-white);
+    background: var(--bg-grey);
+}
+
+.form-contact {
+    padding: 2rem 0;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 15px 12px;
+    margin: 10px 0;
+    color: var(--off-white);
+    border: 2px solid var(--bg-black);
+    border-radius: 15px;
+    outline: none;
+    background: var(--bg-black);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-contact:focus {
+    border: 2px solid rgb(129, 129, 129)
+}
+
+/* .circle1, .circle2 {
     background: white;
     background: radial-gradient(ellipse, rgba(201, 36, 36, 1), rgba(201, 36, 36, 0.5));
     height: 20rem;
@@ -31,7 +78,7 @@ form {
     border-radius: 50%;
     position: absolute;
     /* box-shadow: 0px 0px 85px 130px rgb(201 36 36 / 100%) */
-}
+} */
 
 .circle1 {
     top: 30%;
@@ -43,21 +90,4 @@ form {
     left: 20%;
 }
 
-.form-contact {
-    padding: 2rem 0;
-    width: 100%;
-    font-size: 0.9rem;
-    padding: 15px 12px;
-    margin: 10px;
-    color: #000;
-    border: 2px solid var(--bg-black);
-    border-radius: 15px;
-    outline: none;
-    background-color: var(--bg-black);
-    font-family: 'Montserrat',sans-serif;
-}
-
-.form-contact:focus {
-    border: 2px solid rgb(129, 129, 129)
-}
 

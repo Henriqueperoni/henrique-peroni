@@ -15,7 +15,7 @@
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(1rem);
     z-index: 2;
@@ -25,10 +25,20 @@
     font-weight: 600;
 }
 
-.line {
+.line, .line1, .line2 {
     height: 4px;
     border-radius: 20px;
     background: var(--red);
+}
+
+.line1, .line2 {
+    width: 50%;
+    margin: auto;
+    margin-top: 2px;
+}
+
+.line2 {
+    width: 20%;
 }
 
 form {
@@ -42,16 +52,16 @@ form {
     padding: 0.8rem 1.8rem;
     width: fit-content;
     border: 3px solid var(--red);
-    background: transparent;
-    color: var(--bg-black);
+    color: var(--off-white);
+    background: var(--bg-black);
     opacity: 1;
     transition: all .5s ease;
     cursor: pointer;
 }
 
 .btn-submit:hover {
-    color: var(--off-white);
-    background: var(--bg-grey);
+    background: transparent;
+    color: var(--bg-black);
 }
 
 .form-contact {
@@ -69,17 +79,20 @@ form {
 }
 
 .form-contact:focus {
-    border: 2px solid rgb(129, 129, 129)
+    border: 2px solid rgb(129, 129, 129);
+    box-shadow: 2px 2px 15px 0px rgb(0 0 0 / 40%)
 }
 
-.social-links ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.social-links {
     margin: 0;
     position: absolute;
     right: 1rem;
     bottom: 1rem;
+}
+.social-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .social-links li {
@@ -105,24 +118,42 @@ form {
     transform: scale(1.2);
 }
 
-.circle1, .circle2 {
+.circle1, .circle2, .circle3, .circle4, .circle5  {
     background: white;
     background: radial-gradient(ellipse, rgba(201, 36, 36, 1), rgba(201, 36, 36, 0.5));
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     position: absolute;
-    /* box-shadow: 0px 0px 85px 130px rgb(201 36 36 / 100%) */
 }
 
 .circle1 {
-    top: 30%;
-    right: 15%;
+    top: 16%;
+    right: 30%;
+}
+
+.circle2, .circle3, .circle4, .circle5 {
+    height: 1px;
+    width: 1px;
+    box-shadow: 0px 0px 85px 130px rgb(201 36 36 / 70%)
 }
 
 .circle2 {
-    bottom: 20%;
-    left: 20%;
+    top: 35%;
+    left: 15%;
 }
 
+.circle3 {
+    bottom: 5%;
+    left: 5%;
+}
 
+.circle4 {
+    top: 30%;
+    right: 5%;
+}
+
+.circle5 {
+    bottom: 5%;
+    right: 15%;
+}

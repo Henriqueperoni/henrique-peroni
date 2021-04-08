@@ -14,7 +14,7 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
             </div>  
-            <form action="">
+            <form action="{% url 'contact' %}" method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <button  class="btn btn-submit" type="submit">Submit!</button>

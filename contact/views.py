@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
+from django.core.mail import EmailMessage
+from django.conf import settings
+
 from .forms import ContactForm
 
 # Create your views here.
@@ -6,7 +9,34 @@ from .forms import ContactForm
 
 def contact(request):
     """ A view to return the contact form """
-    form = ContactForm()
+    
+    if request.method == 'POST':
+        print('request')
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            message = request.POST.get('message')
+            contact_email = request.POST.get('email')
+            form.save()
+            print('Form valid')
+
+            email = EmailMessage(
+                "New contact form submited",
+                message,
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.DEFAULT_FROM_EMAIL],
+                reply_to=[contact_email],
+            )
+            try:
+                email.send(fail_silently=False) 
+            except Exception:
+                print('Failed')
+
+                return redirect(reverse('contact'))
+        else:
+            print('Form invalid')
+    else:
+        print('luna')
+        form = ContactForm()
 
     context = {
         'form': form

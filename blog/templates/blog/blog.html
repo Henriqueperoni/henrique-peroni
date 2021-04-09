@@ -1,1 +1,14 @@
-<h1>Hi from blog</h1>
+{% extends "base.html" %}
+{% load static %}
+
+{%  block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Hi from blog</h1>
+{% endblock %}
+
+{%  block extra_js %}
+    <script src="{% static 'blog/js/blog.js' %}"></script>
+{% endblock %}

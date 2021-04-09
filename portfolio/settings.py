@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'home',
     'projects',
     'contact',
+    'blog',
 
     # Other
     'phone_field',

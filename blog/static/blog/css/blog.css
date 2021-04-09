@@ -16,7 +16,14 @@ body {
     border-radius: 8px;
     min-height: 300px;
     padding: 1rem;
+    background: radial-gradient(ellipse, rgba(87,83,78, .5), rgba(87,83,78, .2));
+    backdrop-filter: blur(1rem);
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.post:hover {
+    background: radial-gradient(ellipse, rgba(87,83,78, .2), rgba(87,83,78, .1));
 }
 
 .post h2 {

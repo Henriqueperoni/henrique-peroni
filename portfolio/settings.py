@@ -52,7 +52,8 @@ INSTALLED_APPS = [
 
     # Other
     'phone_field',
-    'crispy_forms'
+    'crispy_forms',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

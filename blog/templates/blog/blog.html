@@ -7,6 +7,10 @@
 
 {% block content %}
     <h1>Hi from blog</h1>
+    {% for post in blog_post %}
+        {{ post.title }}
+        {{ post.content|safe }}
+    {% endfor %}
 {% endblock %}
 
 {%  block extra_js %}

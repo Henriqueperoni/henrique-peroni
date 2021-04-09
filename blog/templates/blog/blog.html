@@ -6,11 +6,14 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Hi from blog</h1>
-    {% for post in blog_post %}
-        {{ post.title }}
-        {{ post.content|safe }}
-    {% endfor %}
+    <div class="post-container">
+        {% for post in blog_post %}
+            <div class="post">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.title_tag }}</p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
 
 {%  block extra_js %}

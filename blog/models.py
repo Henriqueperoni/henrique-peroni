@@ -14,6 +14,7 @@ status = (
 class Post(models.Model):
     title = models.CharField(max_length=256, null=False, blank=False)
     title_tag = models.CharField(max_length=256, null=False, blank=False)
+    image = models.ImageField(null=True, blank=True)
     slug = models.CharField(max_length=256, unique=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     post_date = models.DateTimeField(auto_now_add=True)

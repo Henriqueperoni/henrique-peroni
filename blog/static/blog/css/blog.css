@@ -70,3 +70,28 @@ body {
     left: 0;
     z-index: 1;
 }
+
+/* Post Detail */
+.post-detail-container {
+    margin: 5rem auto;
+    padding: 0 2rem;
+    max-width: 70rem;
+}
+
+.post-heading {
+    margin-bottom: 3rem;
+}
+
+.post-detail-container h1{
+    font-size: 3rem;
+}
+
+.post-detail-container p, h4 {
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+}
+
+.post-detail-container p {
+    margin-top: 1rem;
+    text-align: justify;
+}

@@ -4,7 +4,8 @@ body {
 }
 
 .post-container {
-    padding: 5rem 10rem;
+    max-width: 70rem;
+    margin: 5rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 1rem;
@@ -16,16 +17,46 @@ body {
     border-radius: 8px;
     min-height: 300px;
     padding: 1rem;
-    background: radial-gradient(ellipse, rgba(87,83,78, .5), rgba(87,83,78, .2));
+    background: radial-gradient(ellipse, rgba(87,83,78, .3), rgba(87,83,78, .2));
     backdrop-filter: blur(1rem);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .post:hover {
     background: radial-gradient(ellipse, rgba(87,83,78, .2), rgba(87,83,78, .1));
+    backdrop-filter: blur(0.5rem);
 }
 
 .post h2 {
     margin-bottom: 1rem;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5  {
+    background: white;
+    background: radial-gradient(ellipse, rgba(201, 36, 36, 1), rgba(201, 36, 36, 0.5));
+    height: 1px;
+    width: 1px;
+    box-shadow: 0px 0px 85px 110px rgb(201 36 36 / 60%);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle1 {
+    left: 0%;
+    top: 30%;
+}
+
+.circle2 {
+    right: 10%;
+    top: 40%;
+}
+
+.circle3 {
+    height: 15rem;
+    width: 15rem;
+    box-shadow: none;
+    left: 30%;
+    top: 30%;
 }

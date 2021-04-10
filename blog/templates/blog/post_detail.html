@@ -15,6 +15,14 @@
             {% endif %}
         </div>
         <section>{{ post.content|safe }}</section>
+        <div class="comments">
+            {% for comment in comments %}
+                    <div class="col-12 review-comments">
+                        <p>{{ comment.comment }}</p>
+                    </div>
+                    <hr>
+            {% endfor %}
+        </div>
     </div>
         
   

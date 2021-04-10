@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post
+from .models import Post, PostComment
+from .forms import CreatePostCommentForm
 # Create your views here.
 
 
@@ -15,9 +16,11 @@ def blog(request):
 
 def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
+    comments = PostComment.objects.all()
 
     context = {
         'post': post,
+        'comments': comments
     }
 
     return render(request, 'blog/post_detail.html', context)

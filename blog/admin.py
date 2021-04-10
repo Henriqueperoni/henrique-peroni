@@ -5,7 +5,9 @@ from .models import Post, PostComment
 
 class PostCommentAdminInline(admin.TabularInline):
     model = PostComment
+
     readonly_fields = ('user', 'post', 'comment', 'date_commented',)
+
     ordering = ('-date_commented',)
 
 

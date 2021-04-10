@@ -10,6 +10,9 @@
         <div class="post-heading">
             <h1>{{ post.title }}</h1>
             <h4>{{ post.title_tag }}</h4>
+            {% if post.image %}
+                <img src="{{ post.image.url }}" alt="">
+            {% endif %}
         </div>
         <section>{{ post.content|safe }}</section>
     </div>

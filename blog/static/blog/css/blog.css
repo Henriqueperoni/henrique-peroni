@@ -78,8 +78,9 @@ body {
     max-width: 70rem;
 }
 
-.post-heading {
-    margin-bottom: 3rem;
+.post-heading img {
+    width: 100%;
+    margin: 2rem 0;
 }
 
 .post-detail-container h1{

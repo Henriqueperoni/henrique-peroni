@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%  block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.title_tag }}</p>
+        
+  
+{% endblock %}
+
+{%  block extra_js %}
+    <script src="{% static 'blog/js/blog.js' %}"></script>
+{% endblock %}

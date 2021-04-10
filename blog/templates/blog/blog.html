@@ -9,6 +9,7 @@
     <div class="post-container">
         {% for post in blog_post %}
             <div class="post">
+                <a class="url-overlay" href="{% url 'post_detail' post.slug %}"></a>
                 <h2>{{ post.title }}</h2>
                 <p>{{ post.title_tag }}</p>
             </div>

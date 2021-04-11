@@ -24,9 +24,13 @@
             </form>
             {% for comment in comments %}
                 <div class="post-comments">
+                    <div class="comment-heading">
+                        <h4>{{ comment.user }}</h4>
+                        <span>•</span>
+                        <p>{{ comment.date_commented|date:"M d, Y" }}</p>
+                    </div> 
                     <p>{{ comment.comment }}</p>
                 </div>
-                <hr>
             {% endfor %}
         </div>
     </div>

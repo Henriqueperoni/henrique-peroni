@@ -7,10 +7,11 @@ class CreatePostCommentForm(forms.ModelForm):
         model = PostComment
         fields = ('comment', )
 
-        comment = forms.CharField(
-            label=False,
-            widget=forms.Textarea(attrs={
-                'rows': 4,
-                'placeholder': 'Leave a comment'
-            })
-        )
+    comment = forms.CharField(
+        label=False,
+        widget=forms.Textarea(attrs={
+            'rows': 3,
+            'class': 'comments-form-field',
+            'placeholder': 'Leave a comment',
+        })
+    )

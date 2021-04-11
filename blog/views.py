@@ -16,11 +16,13 @@ def blog(request):
 
 def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
-    comments = PostComment.objects.all()
+    comments = PostComment.objects.filter(post=post)
+    form = CreatePostCommentForm()
 
     context = {
         'post': post,
-        'comments': comments
+        'comments': comments,
+        'form': form
     }
 
     return render(request, 'blog/post_detail.html', context)

@@ -96,3 +96,39 @@ body {
     margin-top: 1rem;
     text-align: justify;
 }
+
+.comments {
+    border: solid 1px var(--off-white);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.post-comments {
+    margin-top: 2rem;
+}
+
+.comments-form-field {
+    background: var(--bg-black);
+    padding: .5rem;
+    margin-top: 1rem;
+    color: var(--off-white);
+    width: 100%;
+}
+
+.btn-submit {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    margin-top: 0;
+    width: fit-content;
+    border: 3px solid var(--red);
+    color: var(--off-white);
+    background: var(--bg-black);
+    float: right;
+    opacity: 1;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+/* .btn-submit:hover {
+    background: var(--bg-grey);
+} */

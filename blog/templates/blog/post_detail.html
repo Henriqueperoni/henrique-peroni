@@ -16,11 +16,17 @@
         </div>
         <section>{{ post.content|safe }}</section>
         <div class="comments">
+            <h2>Comments</h2>
+            <form action="" method="">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button class="btn btn-submit" type="submit">Add comment</button>
+            </form>
             {% for comment in comments %}
-                    <div class="col-12 review-comments">
-                        <p>{{ comment.comment }}</p>
-                    </div>
-                    <hr>
+                <div class="post-comments">
+                    <p>{{ comment.comment }}</p>
+                </div>
+                <hr>
             {% endfor %}
         </div>
     </div>

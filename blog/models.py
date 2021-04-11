@@ -42,4 +42,4 @@ class PostComment(models.Model):
     date_commented = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return f"{self.user}' comment on {self.comment}"
+        return f"{self.user}' comment on {self.post}"

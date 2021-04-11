@@ -19,6 +19,15 @@ def post_detail(request, slug):
     comments = PostComment.objects.filter(post=post)
     form = CreatePostCommentForm()
 
+    if request.method == 'POST':
+        create_comment = PostComment(
+            print('Create comment'),
+            comment=request.POST.get('comment'),
+            user=request.user,
+            post=post,
+        )
+        create_comment.save()
+
     context = {
         'post': post,
         'comments': comments,

@@ -17,7 +17,7 @@
         <section>{{ post.content|safe }}</section>
         <div class="comments">
             <h2>Comments</h2>
-            <form action="" method="">
+            <form method="POST" action="{% url 'post_detail' post.slug %}">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <button class="btn btn-submit" type="submit">Add comment</button>

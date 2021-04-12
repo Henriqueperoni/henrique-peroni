@@ -21,6 +21,9 @@ class Post(models.Model):
     slug = models.CharField(max_length=256, unique=True, blank=True)
     post_date = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=status, default=0)
+    likes = models.ManyToManyField(
+        User, related_name='like', default=None, blank=True)
+    likes_count = models.BigIntegerField(default='0')
     content = RichTextField(blank=True, null=True)
 
     def __str__(self):

@@ -17,8 +17,8 @@ class PostAdmin(admin.ModelAdmin):
     readonly_fields = ('post_date',)
 
     fields = ('author', 'title', 'slug',
-              'title_tag', 'status', 'content',
-              'image',)
+              'title_tag', 'status', 'likes',
+              'likes_count', 'content', 'image',)
 
     ordering = ('-post_date',)
 

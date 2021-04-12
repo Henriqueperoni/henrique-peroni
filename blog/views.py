@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404
+from django.http import JsonResponse
+
 from .models import Post, PostComment
 from .forms import CreatePostCommentForm
 # Create your views here.
@@ -35,3 +37,22 @@ def post_detail(request, slug):
     }
 
     return render(request, 'blog/post_detail.html', context)
+
+
+def like(request):
+    if request.POST.get('action') == 'post':
+        result = ''
+        id = int(request.POST.get('postid'))
+        post = get_object_or_404(Post, id=id)
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+            post.likes_count -= 1
+            result = post.likes_count
+            post.save()
+        else:
+            post.likes.add(request.user)
+            post.likes_count += 1
+            result = post.likes_count
+            post.save()
+
+        return JsonResponse({'result': result, })

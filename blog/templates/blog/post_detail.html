@@ -7,14 +7,20 @@
 
 {% block content %}
     <div class="post-detail-container">
-        <div class="post-heading">
-            <h1>{{ post.title }}</h1>
-            <h4>{{ post.title_tag }}</h4>
-            {% if post.image %}
-                <img src="{{ post.image.url }}" alt="">
-            {% endif %}
-        </div>
-        <section>{{ post.content|safe }}</section>
+        <article>
+            <div class="post-heading">
+                <h1>{{ post.title }}</h1>
+                <h4>{{ post.title_tag }}</h4>
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" alt="">
+                {% endif %}
+            </div>
+            <section>{{ post.content|safe }}</section>
+
+            <span id="like_count">{{ post.likes_count }}</span>
+            
+            <button class="btn-submit" id="like-button" value="{{post.id}}"></button>
+        </article>
         <div class="comments">
             <h2>Comments</h2>
             <form method="POST" action="{% url 'post_detail' post.slug %}">

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%  block extra_css %}
+    <link rel="stylesheet" href="{% static 'projects/css/projects.css' %}">
+{% endblock %}
+
+{% block content %}
+        <h1>New Project</h1>
+{% endblock %}
+
+{%  block extra_js %}
+    <script src="{% static 'projects/js/projects.js' %}"></script>
+{% endblock %}

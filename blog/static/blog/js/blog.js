@@ -6,7 +6,7 @@ $(document).on("click", "#like-button", function (e) {
   e.preventDefault();
   $.ajax({
     type: "POST",
-    url: '{% url "like" %}',
+    url: 'like/',
     data: {
       csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val(),
       postid: $("#like-button").val(),

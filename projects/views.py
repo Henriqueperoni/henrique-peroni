@@ -24,3 +24,9 @@ def project_detail(request, slug):
     }
 
     return render(request, 'projects/project_detail.html', context)
+
+
+def add_project(request):
+    """ A view to add new projects """
+
+    return render(request, 'projects/add_project.html')

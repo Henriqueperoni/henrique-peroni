@@ -16,8 +16,8 @@ def blog(request):
     return render(request, 'blog/blog.html', context)
 
 
-def post_detail(request, slug):
-    post = get_object_or_404(Post, slug=slug)
+def post_detail(request, post_detail):
+    post = get_object_or_404(Post, slug=post_detail)
     comments = PostComment.objects.filter(post=post)
     form = CreatePostCommentForm()
 

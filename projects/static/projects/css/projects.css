@@ -97,3 +97,21 @@ img {
     color: var(--off-white);
     text-align: justify;
 }
+
+/* Add Project */
+.form-container {
+    margin: 2rem 0;
+}
+
+.glass {
+    width: 60%;
+    max-width: 900px;
+}
+
+.new-post-heading {
+    margin: 2rem 0;
+}
+
+form {
+    width: 80%;
+}

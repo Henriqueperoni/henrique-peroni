@@ -6,7 +6,20 @@
 {% endblock %}
 
 {% block content %}
-        <h1>New Project</h1>
+        <div class="form-container">
+            <div class="glass">
+                <div class="new-post-heading">
+                    <h1>Add new Post</h1>
+                    <div class="heading-line"></div>
+                    <div class="heading-line1"></div>
+                    <div class="heading-line2"></div>
+                </div>
+                <form action="">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                </form>
+            </div>
+        </div>
 {% endblock %}
 
 {%  block extra_js %}

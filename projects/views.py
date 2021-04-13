@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Project
+from .forms import PostForm
 
 # Create your views here.
 
@@ -28,5 +29,10 @@ def project_detail(request, slug):
 
 def add_project(request):
     """ A view to add new projects """
+    form = PostForm()
 
-    return render(request, 'projects/add_project.html')
+    context = {
+        'form': form
+    }
+
+    return render(request, 'projects/add_project.html', context)

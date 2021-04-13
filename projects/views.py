@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Project
 from .forms import PostForm
 
@@ -29,7 +29,16 @@ def project_detail(request, slug):
 
 def add_project(request):
     """ A view to add new projects """
-    form = PostForm()
+
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('add_project'))
+        else:
+            print('Form not valid. It failed')
+    else:
+        form = PostForm()
 
     context = {
         'form': form

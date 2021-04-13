@@ -115,3 +115,7 @@ img {
 form {
     width: 80%;
 }
+
+.btn-submit {
+    margin-bottom: 1rem;
+}

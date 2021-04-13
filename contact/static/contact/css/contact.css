@@ -3,24 +3,6 @@ form {
     max-width: 500px;
 }
 
-.btn-submit {
-    display: block;
-    margin: 0 auto;
-    padding: 0.8rem 1.8rem;
-    width: fit-content;
-    border: 3px solid var(--red);
-    color: var(--off-white);
-    background: var(--bg-black);
-    opacity: 1;
-    transition: all .5s ease;
-    cursor: pointer;
-}
-
-.btn-submit:hover {
-    background: transparent;
-    color: var(--bg-black);
-}
-
 .social-links {
     margin: 0;
     position: absolute;

@@ -31,10 +31,10 @@ def add_project(request):
     """ A view to add new projects """
 
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
-            return redirect(reverse('add_project'))
+            project = form.save()
+            return redirect(reverse('project_detail', args=[project.slug]))
         else:
             print('Form not valid. It failed')
     else:

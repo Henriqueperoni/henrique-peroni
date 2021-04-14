@@ -9,8 +9,9 @@ class Project(models.Model):
     class Meta:
         verbose_name_plural = 'Projects'
 
-    name = models.CharField(max_length=50, null=False, blank=False)
-    slug = models.CharField(max_length=256, unique=True, blank=True)
+    name = models.CharField(
+        max_length=50, null=False, blank=False, unique=True)
+    slug = models.CharField(max_length=256, blank=True, unique=True)
     description = models.TextField(max_length=1000, null=False, blank=False)
     description1 = models.TextField(max_length=1000, null=True, blank=True)
     description2 = models.TextField(max_length=1000, null=True, blank=True)

@@ -22,11 +22,12 @@ def project_detail(request, slug):
     """ A view to show individual project details """
     project = get_object_or_404(Project, slug=slug)
 
+    template = 'projects/project_detail.html'
     context = {
         'project': project,
     }
 
-    return render(request, 'projects/project_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required
@@ -46,33 +47,36 @@ def add_project(request):
     else:
         form = PostForm()
 
+    template = 'projects/add_project.html'
     context = {
         'form': form
     }
 
-    return render(request, 'projects/add_project.html', context)
+    return render(request, template, context)
 
 
 @login_required
 def edit_project(request, slug):
-    """ A view to add new projects """
+    """ A view to edit a project """
+    if not request.user.is_superuser:
+        return redirect(reverse('project'))
+
     project = get_object_or_404(Project, slug=slug)
-    # if not request.user.is_superuser:
-    #     return redirect(reverse('project'))
 
-    # if request.method == "POST":
-    #     form = PostForm(request.POST, request.FILES)
-    #     if form.is_valid():
-    #         project = form.save()
-    #         return redirect(reverse('project_detail', args=[project.slug]))
-    #     else:
-    #         print('Form not valid. It failed')
-    # else:
-    form = PostForm()
+    if request.method == "POST":
+        form = PostForm(request.POST, request.FILES, instance=project)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('project_detail', args=[project.slug]))
+        else:
+            print('Form not valid. It failed')
+    else:
+        form = PostForm(instance=project)
 
+    template = 'projects/edit_project.html'
     context = {
         'form': form,
         'project': project
     }
 
-    return render(request, 'projects/edit_project.html', context)
+    return render(request, template, context)

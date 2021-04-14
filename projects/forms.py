@@ -12,10 +12,9 @@ class PostForm(forms.ModelForm):
                   'description_image', 'description_image1',
                   'description_image2')
 
-        description_image = forms.ImageField(
-            label='Image', required=True, widget=CustomClearableFileInput)
-        description_image1 = forms.ImageField(
-            label='Image', required=False, widget=CustomClearableFileInput)
+        description_image = forms.ImageField(label='Image',
+                                             required=True,
+                                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """

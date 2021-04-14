@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomClearableFileInput
 from .models import Project
 
 
@@ -10,6 +11,11 @@ class PostForm(forms.ModelForm):
                   'description2', 'live_site', 'github',
                   'description_image', 'description_image1',
                   'description_image2')
+
+        description_image = forms.ImageField(
+            label='Image', required=True, widget=CustomClearableFileInput)
+        description_image1 = forms.ImageField(
+            label='Image', required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """

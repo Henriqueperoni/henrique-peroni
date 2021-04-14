@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib.auth.decorators import login_required
+
 from .models import Project
 from .forms import PostForm
 
@@ -27,8 +29,12 @@ def project_detail(request, slug):
     return render(request, 'projects/project_detail.html', context)
 
 
+@login_required
 def add_project(request):
     """ A view to add new projects """
+
+    if not request.user.is_superuser:
+        return redirect(reverse('project'))
 
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)

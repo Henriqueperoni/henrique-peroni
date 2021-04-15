@@ -160,3 +160,100 @@ form {
     background: rgb(136, 4, 4);
     color: var(--off-white);
 }
+
+.container-modal {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.container-modal.show-modal {
+    display: flex;
+}
+
+.modal {
+    position: relative;
+    height: 300px;
+    width: 50%;
+    max-width: 600px;
+    margin-top: 3rem;
+    background: var(--off-white);
+    border: 10px solid var(--bg-black);
+    box-shadow: 0 0 0 10px var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal h3 {
+    font-size: 2rem;
+    color: var(--bg-grey);
+    margin-top: 2rem;
+}
+
+.modal p {
+    color: var(--bg-grey);
+    margin-top: 4rem;
+}
+
+.modal-btns {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-cancel {
+    padding: 0.8rem 1.5rem;
+    width: fit-content;
+    border: 3px solid var(--bg-grey);
+    color: var(--bg-black);
+    background: var(--off-white);
+    opacity: 1;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background: rgb(231, 229, 229);
+}
+
+.btn-delete-modal {
+    position: static;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.show-modal .modal {
+    animation: modal .5s;
+}
+
+.close-modal {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-grey);
+    color: var(--off-white);
+    border: 2px solid var(--off-white);
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: -35px;
+    right: -35px;
+}

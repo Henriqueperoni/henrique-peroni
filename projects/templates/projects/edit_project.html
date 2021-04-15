@@ -32,7 +32,19 @@
         </div>
     </div>
 
-    
+    <!-- Delete Modal -->
+    <div id="modal-delete" class="container-modal">
+        <div class="modal">
+            <h3>Delete Project</h3>
+            <p>Are you sure you want to delete the <strong>{{ project.name }}</strong>?</p>
+            <div class="modal-btns">
+                <a class="btn btn-cancel">Cancel</a>
+                <a class="btn btn-delete btn-delete-modal" href="">Delete <i class="fas fa-trash-alt white-text"></i></a>
+            </div>
+            <!-- Close Modal -->
+            <button class="close-modal">x</button>
+        </div>
+    </div>
 {% endblock %}
 
 {%  block extra_js %}

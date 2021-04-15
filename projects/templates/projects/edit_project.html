@@ -6,6 +6,14 @@
 {% endblock %}
 
 {% block content %}
+    <div class="add-project-wrapper">
+
+        <!-- Return button -->
+        <a class="return-btn" href="{% url 'projects' %}">
+            <i class="fas fa-arrow-circle-left"></i>
+        </a>
+
+        <!-- Edit project form -->
         <div class="form-container">
             <div class="glass">
                 <div class="new-project-heading">
@@ -21,6 +29,7 @@
                 </form>
             </div>
         </div>
+    </div>
 {% endblock %}
 
 {%  block extra_js %}

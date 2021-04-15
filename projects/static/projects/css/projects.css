@@ -11,7 +11,7 @@ body {
     margin-bottom: 5rem;
 }
 
-.add-project {
+.add-project, .return-btn {
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -19,15 +19,17 @@ body {
     color: var(--bg-grey);
 }
 
-h2 {
+.project-title h2 {
     font-size: 3rem;
     font-weight: 100;
     color: var(--bg-grey);
     display: inline-block;
 }
 
-.project a {
-    text-decoration: none;
+.project-title i {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: var(--bg-grey);
 }
 
 img {
@@ -107,6 +109,16 @@ img {
 }
 
 /* Add Project */
+.add-project-wrapper {
+    position: relative;
+}
+
+.return-btn {
+    color: var(--off-white);
+    right: 1rem;
+    top: -1rem;
+}
+
 .form-container {
     margin: 2rem 0;
 }

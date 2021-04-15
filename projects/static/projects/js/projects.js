@@ -17,3 +17,24 @@ if (window.location.href === "http://127.0.0.1:8000/projects/") {
     "-=1.5"
   );
 }
+
+function startModal() {
+    const modal = document.getElementById("modal-delete");
+    modal.classList.add("show-modal");
+    
+    modal.addEventListener("click", (e) => {
+        console.log(e.target.className[1])
+        if (e.target.id == "modal-delete" || e.target.className == "close-modal" || e.target.className == "btn btn-cancel")
+            modal.classList.remove("show-modal");
+    });
+};
+
+// startModal()
+
+document.addEventListener("DOMContentLoaded", () => {
+    const deleteButton = document.getElementById("delete-button");
+
+    deleteButton.addEventListener("click", () => {
+        startModal();
+    });
+});

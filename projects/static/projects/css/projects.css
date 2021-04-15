@@ -166,7 +166,7 @@ form {
     height: 100vh;
     background: rgba(0, 0, 0, .5);
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: center;
     top: 0;
     left: 0;

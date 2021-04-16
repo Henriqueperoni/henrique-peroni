@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+.display-none {
+    display: none;
+}
+
 .heading {
     font-family: "Lobster",cursive;
     font-size: 2.5rem;
@@ -54,35 +58,45 @@ a {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background: var(--bg-grey);
-    width: 100%;
     height: 10vh;
-    padding: 1rem 5rem;
     z-index: 2;
 }
 
 nav h3 {
     color: var(--off-white);
     font-family: "Lobster",cursive;
-    margin-left: 1rem;
     font-size: 1.3rem;
     cursor: pointer;
 }
 
 .nav-links {
     display: flex;
+    justify-content: space-around;
+    width: 40%;
     margin: 0;
 }
 
 .nav-links li {
     list-style-type: none;
-    padding-left: 6rem;
 }
 
 .nav-links a {
     color: var(--off-white);
     font-size: 0.9rem;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: var(--off-white);
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 /* Forms */
@@ -192,4 +206,59 @@ nav h3 {
     border-radius: 0;
 }
 
+@media screen and (max-width: 992px) {
+    body {
+        overflow-x: hidden;
+    }
 
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        height: 90vh;
+        background: var(--bg-grey);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        z-index: 10;
+        transition: transform .5s ease;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+@keyframes navLinksFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.close-burger .burger-line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.close-burger .burger-line2 {
+    opacity: 0;
+}
+
+.close-burger .burger-line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

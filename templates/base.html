@@ -41,9 +41,14 @@
                 <ul class="nav-links">
                     <li><a href="{% url 'home' %}">About</a></li>
                     <li><a href="{% url 'projects' %}">Portfolio</a></li>
-                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li class="display-none" ><a href="{% url 'blog' %}">Blog</a></li>
                     <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
+                <div class="burger">
+                    <div class="burger-line1"></div>
+                    <div class="burger-line2"></div>
+                    <div class="burger-line3"></div>
+                </div>
             </nav>
         </header>
 

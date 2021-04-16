@@ -62,6 +62,7 @@ img {
 
 .social-links {
     display: flex;
+    position: relative;
     align-items: center;
 }
 
@@ -84,16 +85,27 @@ img {
     border: 2px solid var(--off-white);
 }
 
-.project-detail i {
+.fa-github{
     color: var(--off-white);
     font-size: 2rem;
     margin-left: 1rem;
     transition: all 0.3s ease;
 }
 
-.project-detail i:hover {
+.fa-github:hover {
     color: var(--off-white);
     font-size: 2.25rem;
+}
+
+.btn-delete-square {
+    top: 0rem !important;
+    right: 0rem !important;
+    padding: .7rem !important;
+    border-radius: 0;
+}
+
+.btn-delete-square:hover {
+    border: 3px solid var(--off-white);
 }
 
 .project-description img {

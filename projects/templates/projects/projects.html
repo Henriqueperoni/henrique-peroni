@@ -7,16 +7,20 @@
 
 {% block content %}
     <div class="projects">
-        <a class="add-project" href="{% url 'add_project' %}"><i class="fas fa-plus-circle"></i></a>
+        {% if request.user.is_superuser %}
+            <a class="add-project" href="{% url 'add_project' %}"><i class="fas fa-plus-circle"></i></a>
+        {% endif %}
         {% for project in projects %}
             <div class="project">
                 <div class="project-title">
-                    <a href="">
+                    <a href="{% url 'project_detail' project.slug %}">
                         <h2>{{ project.name }}</h2>
                     </a>
-                    <a href="{% url 'edit_project' project.slug %}">
-                        <i class="fas fa-edit"></i>
-                    </a>
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'edit_project' project.slug %}">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    {% endif %}
                 </div>
                 <div class="line"></div>
                 <div class="image-wrapper">

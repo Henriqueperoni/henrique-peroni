@@ -80,3 +80,15 @@ def edit_project(request, slug):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_project(request, slug):
+    """ A view to delete a project """
+    if not request.user.is_superuser:
+        return redirect(reverse('project'))
+
+    project = get_object_or_404(Project, slug=slug)
+    project.delete()
+
+    return redirect(reverse('projects'))

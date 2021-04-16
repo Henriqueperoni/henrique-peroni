@@ -29,8 +29,6 @@ function startModal() {
     });
 };
 
-// startModal()
-
 document.addEventListener("DOMContentLoaded", () => {
     const deleteButton = document.getElementById("delete-button");
 

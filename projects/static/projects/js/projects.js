@@ -23,7 +23,6 @@ function startModal() {
     modal.classList.add("show-modal");
     
     modal.addEventListener("click", (e) => {
-        console.log(e.target.className[1])
         if (e.target.id == "modal-delete" || e.target.className == "close-modal" || e.target.className == "btn btn-cancel")
             modal.classList.remove("show-modal");
     });
@@ -31,8 +30,9 @@ function startModal() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const deleteButton = document.getElementById("delete-button");
-
-    deleteButton.addEventListener("click", () => {
-        startModal();
-    });
+    if (deleteButton) {
+        deleteButton.addEventListener("click", () => {
+            startModal();
+        });
+    }
 });

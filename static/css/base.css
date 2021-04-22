@@ -211,7 +211,7 @@ nav h3 {
         overflow-x: hidden;
     }
 
-    .display-none-small {
+    .d-none-m {
         display: none !important;
     }
 
@@ -266,4 +266,11 @@ nav h3 {
 
 .close-burger .burger-line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 576px) {
+    .d-none-sm {
+        display: none !important;
+    }
+
 }

@@ -111,7 +111,6 @@ svg {
     }
 
     .intro-message h2{
-        font-size: 2rem;
         width: 100%;
     }
 
@@ -125,5 +124,26 @@ svg {
         margin-bottom: 0;
     }
 
+    .about-container {
+        min-height: unset;
+        margin: 2rem 0;
+    }
 
+    .about-text p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro-message h2{
+        font-size: 2rem;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text p {
+        margin: 0 auto;
+    }
 }

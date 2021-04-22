@@ -101,3 +101,29 @@ svg {
     stroke-dasharray: 5500;
     stroke-dashoffset: 0;
 }
+
+@media screen and (max-width: 992px) {
+    .intro {
+        justify-content: center;
+    }
+    .intro-message {
+        width: max-content;
+    }
+
+    .intro-message h2{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .intro-message div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-message > div > h2:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+
+}

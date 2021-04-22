@@ -211,11 +211,16 @@ nav h3 {
         overflow-x: hidden;
     }
 
+    .display-none-small {
+        display: none !important;
+    }
+
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 10vh;
         height: 90vh;
+        width: 60%;
         background: var(--bg-grey);
         display: flex;
         flex-direction: column;

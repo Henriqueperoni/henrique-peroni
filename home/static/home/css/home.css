@@ -129,8 +129,13 @@ svg {
         margin: 2rem 0;
     }
 
+    .about-text {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
     .about-text p {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -140,10 +145,14 @@ svg {
     }
 
     .about-text {
-        width: 100%;
+        padding: 0 1rem;
     }
 
     .about-text p {
         margin: 0 auto;
+    }
+
+    .btn {
+        margin: 1rem auto 0;
     }
 }

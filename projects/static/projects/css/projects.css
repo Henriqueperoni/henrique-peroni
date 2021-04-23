@@ -51,6 +51,7 @@ img {
 /* Project Detail */
 .project-detail-container {
     padding: 5rem 10rem;
+    position: relative;
 }
 
 .project-detail h2{
@@ -62,8 +63,12 @@ img {
 
 .social-links {
     display: flex;
-    position: relative;
+    justify-content: space-between;
     align-items: center;
+}
+
+.social-links div{
+    display: flex;
 }
 
 .btn-live-site {
@@ -98,8 +103,7 @@ img {
 }
 
 .btn-delete-square {
-    top: 0rem !important;
-    right: 0rem !important;
+    position: unset !important;
     padding: .7rem !important;
     border-radius: 0;
 }
@@ -128,7 +132,7 @@ img {
 .return-btn {
     color: var(--off-white);
     right: 1rem;
-    top: -1rem;
+    top: 1rem;
 }
 
 .form-container {
@@ -280,12 +284,16 @@ form {
         margin-bottom: 2rem;
     }
 
+    .project-detail-container {
+        padding: 5rem 3rem;
+    }
+
 }
 
 
 
 @media screen and (max-width: 576px) {
-    .projects {
+    .projects, .project-detail-container {
         padding: 4rem 1rem 2rem 1rem;
     }
 

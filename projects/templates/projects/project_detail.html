@@ -12,10 +12,17 @@
                 <h2>{{ project.name }}</h2>
             </a>
 
+            <!-- Return button -->
+            <a class="return-btn" href="{% url 'projects' %}">
+                <i class="fas fa-arrow-circle-left"></i>
+            </a>
+
             <!-- Social Links and Delete button -->
             <div class="social-links">
-                <a class="btn-live-site" href="{{ project.live_site }}" target="_blank">Live Site</a>
-                <a href="{{ project.github }}" target="_blank"><i class="fab fa-github"></i></a>
+                <div>
+                    <a class="btn-live-site" href="{{ project.live_site }}" target="_blank">Live Site</a>
+                    <a href="{{ project.github }}" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
                 {% if request.user.is_superuser %}
                     <a id="delete-button" class="btn btn-delete btn-delete-square">Delete <i class="fas fa-trash-alt"></i></a>
                 {% endif %}

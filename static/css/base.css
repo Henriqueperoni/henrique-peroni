@@ -273,4 +273,8 @@ nav h3 {
         display: none !important;
     }
 
+    .btn-submit {
+        margin: 1rem 0;
+    }
+
 }

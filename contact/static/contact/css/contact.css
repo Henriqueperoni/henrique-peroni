@@ -77,3 +77,24 @@ form {
     bottom: 5%;
     right: 15%;
 }
+
+@media screen and (max-width: 992px) {
+    .glass {
+        min-height: 60vh;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    form {
+        width: 92%;
+    }
+
+    .contact-heading{
+        margin: 2rem 0;
+    }
+
+    .btn-submit {
+        margin: 1rem auto;
+    }
+}

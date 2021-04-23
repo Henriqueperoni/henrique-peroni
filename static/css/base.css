@@ -277,4 +277,16 @@ nav h3 {
         margin: 1rem 0;
     }
 
+    .glass {
+        min-width: 95%;
+    }
+
+    .form-container {
+        padding-top: 5rem;
+    }
+
+    form {
+        width: 92%;
+    }
+
 }

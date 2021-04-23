@@ -269,3 +269,41 @@ form {
     top: -35px;
     right: -35px;
 }
+
+
+@media screen and (max-width: 992px) {
+    .projects {
+        padding: 5rem 3rem 2rem 3rem;
+    }
+
+    .project {
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .projects {
+        padding: 4rem 1rem 2rem 1rem;
+    }
+
+    .project-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-title i {
+        margin-left: .5rem
+    }
+
+    .line {
+        margin: 1rem 0;
+    }
+
+    .add-project {
+        right: 1rem;
+        top: 1rem;
+    }
+
+}

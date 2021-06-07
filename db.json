@@ -1,1 +1,916 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2021-04-01T08:04:45.754Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "henriqueperoni.example.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Domain name\"]}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2021-04-01T08:05:04.554Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "henriqueperoni.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2021-04-01T08:11:04.426Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "henriqueperoni@hotmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Verified\", \"Primary\"]}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2021-04-02T14:00:51.010Z", "user": 1, "content_type": 13, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2021-04-02T14:13:35.050Z", "user": 1, "content_type": 14, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2021-04-02T14:16:58.805Z", "user": 1, "content_type": 14, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2021-04-02T14:17:30.850Z", "user": 1, "content_type": 14, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2021-04-02T15:28:08.057Z", "user": 1, "content_type": 14, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2021-04-02T15:30:16.788Z", "user": 1, "content_type": 14, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2021-04-02T15:52:50.394Z", "user": 1, "content_type": 14, "object_id": "2", "object_repr": "Book's World", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2021-04-03T07:47:34.009Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2021-04-03T07:55:35.167Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2021-04-03T07:56:40.799Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2021-04-03T08:02:11.215Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2021-04-03T08:03:47.322Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2021-04-03T16:13:51.739Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2021-04-05T06:26:56.020Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2021-04-05T06:30:58.816Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image1\"]}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2021-04-05T06:34:20.643Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2021-04-05T06:35:02.213Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\", \"Description image1\"]}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2021-04-05T06:35:17.844Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\", \"Description image1\"]}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2021-04-05T06:35:42.113Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image1\"]}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2021-04-05T06:36:11.843Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\", \"Description image1\"]}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2021-04-05T06:36:23.657Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2021-04-05T06:38:11.733Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description1\", \"Description2\", \"Description image2\"]}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2021-04-05T06:39:36.565Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2021-04-05T06:46:09.841Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2021-04-05T06:46:58.722Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2021-04-05T06:55:56.105Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2021-04-05T06:56:50.749Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2021-04-09T06:36:40.300Z", "user": 1, "content_type": 16, "object_id": "10", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2021-04-09T06:36:40.303Z", "user": 1, "content_type": 16, "object_id": "9", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2021-04-09T06:36:40.305Z", "user": 1, "content_type": 16, "object_id": "8", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2021-04-09T06:36:40.306Z", "user": 1, "content_type": 16, "object_id": "7", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2021-04-09T06:36:40.307Z", "user": 1, "content_type": 16, "object_id": "6", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2021-04-09T06:36:40.308Z", "user": 1, "content_type": 16, "object_id": "5", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2021-04-09T06:36:40.309Z", "user": 1, "content_type": 16, "object_id": "4", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_time": "2021-04-09T06:36:40.311Z", "user": 1, "content_type": 16, "object_id": "3", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 39, "fields": {"action_time": "2021-04-09T06:36:40.312Z", "user": 1, "content_type": 16, "object_id": "2", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2021-04-09T06:36:40.313Z", "user": 1, "content_type": 16, "object_id": "1", "object_repr": "Contact form from Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2021-04-09T07:10:53.080Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Book's World", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2021-04-09T07:22:44.597Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 43, "fields": {"action_time": "2021-04-09T07:23:52.672Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2021-04-09T07:24:45.866Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2021-04-09T07:26:16.407Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2021-04-09T07:27:05.341Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time": "2021-04-09T07:28:39.364Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 48, "fields": {"action_time": "2021-04-09T07:29:26.995Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Read More For Less", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2021-04-09T08:13:59.310Z", "user": 1, "content_type": 17, "object_id": "1", "object_repr": "How to Create A Post With Django", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2021-04-09T09:49:23.657Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2021-04-09T09:52:00.993Z", "user": 1, "content_type": 17, "object_id": "3", "object_repr": "How to Get Ideas to Write a Blog", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 52, "fields": {"action_time": "2021-04-10T07:51:36.615Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"}}, {"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2021-04-10T09:44:34.635Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2021-04-10T10:46:52.148Z", "user": 1, "content_type": 17, "object_id": "3", "object_repr": "How to Get Ideas to Write a Blog", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2021-04-10T10:53:08.380Z", "user": 1, "content_type": 17, "object_id": "3", "object_repr": "How to Get Ideas to Write a Blog", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"post comment\", \"object\": \"henrique' comment on fewfwe\"}}]"}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time": "2021-04-11T06:42:28.750Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"post comment\", \"object\": \"henrique' comment on That's the first comment on the post\"}}]"}}, {"model": "admin.logentry", "pk": 57, "fields": {"action_time": "2021-04-11T06:42:54.164Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"post comment\", \"object\": \"henrique' comment on That's is the second one. And it's from the same person\"}}]"}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2021-04-11T10:06:47.914Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"deleted\": {\"name\": \"post comment\", \"object\": \"henrique' comment on Why Shoud I Do a Bootcamp?\"}}, {\"deleted\": {\"name\": \"post comment\", \"object\": \"henrique' comment on Why Shoud I Do a Bootcamp?\"}}, {\"deleted\": {\"name\": \"post comment\", \"object\": \"henrique' comment on Why Shoud I Do a Bootcamp?\"}}]"}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2021-04-11T10:07:01.505Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"deleted\": {\"name\": \"post comment\", \"object\": \"henrique' comment on Why Shoud I Do a Bootcamp?\"}}]"}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2021-04-11T10:07:31.385Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"deleted\": {\"name\": \"post comment\", \"object\": \"henrique' comment on Why Shoud I Do a Bootcamp?\"}}, {\"deleted\": {\"name\": \"post comment\", \"object\": \"henrique' comment on Why Shoud I Do a Bootcamp?\"}}, {\"deleted\": {\"name\": \"post comment\", \"object\": \"henrique' comment on Why Shoud I Do a Bootcamp?\"}}]"}}, {"model": "admin.logentry", "pk": 61, "fields": {"action_time": "2021-04-12T07:56:21.334Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Likes\"]}}]"}}, {"model": "admin.logentry", "pk": 62, "fields": {"action_time": "2021-04-12T07:56:27.021Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2021-04-12T07:56:35.641Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2021-04-12T13:15:43.943Z", "user": 1, "content_type": 17, "object_id": "1", "object_repr": "How to Create A Post With Django", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Likes\"]}}]"}}, {"model": "admin.logentry", "pk": 65, "fields": {"action_time": "2021-04-12T13:15:54.700Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 66, "fields": {"action_time": "2021-04-12T13:18:08.315Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2021-04-12T13:18:28.425Z", "user": 1, "content_type": 4, "object_id": "2", "object_repr": "hila", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2021-04-12T13:18:49.117Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Likes\"]}}]"}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_time": "2021-04-12T13:19:39.704Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Likes\"]}}]"}}, {"model": "admin.logentry", "pk": 70, "fields": {"action_time": "2021-04-12T13:19:44.929Z", "user": 1, "content_type": 17, "object_id": "3", "object_repr": "How to Get Ideas to Write a Blog", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2021-04-12T13:31:48.329Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Likes count\"]}}]"}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2021-04-12T13:32:00.991Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "Why Shoud I Do a Bootcamp?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Likes count\"]}}]"}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2021-04-14T06:49:51.893Z", "user": 1, "content_type": 15, "object_id": "4", "object_repr": "Henrique Peroni1", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_time": "2021-04-14T06:49:51.895Z", "user": 1, "content_type": 15, "object_id": "3", "object_repr": "Henrique Peroni", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 75, "fields": {"action_time": "2021-04-14T08:17:55.086Z", "user": 1, "content_type": 15, "object_id": "3", "object_repr": "Book's World1", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2021-04-14T10:08:02.053Z", "user": 1, "content_type": 15, "object_id": "5", "object_repr": "Book's World", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2021-04-14T10:08:02.054Z", "user": 1, "content_type": 15, "object_id": "4", "object_repr": "Book's World1", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2021-04-14T10:08:36.675Z", "user": 1, "content_type": 15, "object_id": "6", "object_repr": "Book's World", "action_flag": 3, "change_message": ""}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$216000$rsY4jpCdy2lg$25iatSXLRriBl3pLtQwrqVMpxfXLT6iqkhApI0+jpw4=", "last_login": "2021-04-16T06:56:40.915Z", "is_superuser": true, "username": "henrique", "first_name": "", "last_name": "", "email": "henriqueperoni@hotmail.com", "is_staff": true, "is_active": true, "date_joined": "2021-04-01T07:49:58.228Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 2, "fields": {"password": "pbkdf2_sha256$216000$wgIWPdt6ngle$sB3pstN5kRTfm7Ncw0XZtkY//uJK0JACiQ8WHyYdros=", "last_login": null, "is_superuser": false, "username": "hila", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2021-04-12T13:18:28.314Z", "groups": [], "user_permissions": []}}, {"model": "sessions.session", "pk": "6qns2fi7rw48v5esowce199yuq16qecv", "fields": {"session_data": ".eJxVjEEOgjAQRe_StWmmA7QMS_eeoWlhkKppSQuJxnh3IWGh2__e-29h3bpMdi2cbRhEJ5Q4_W7e9XeOOxhuLl6T7FNccvByV-RBi7ykgR_nw_07mFyZtrpuTGsUOt9qp3wFOKJvNBpNpBSRGVsGVFpXFdU0akJAqqEHhq3cuv20cCkhRcvPOeSX6ODzBRO0PNc:1lRsQX:lW1gCanuTg3ic_qIokv1SLMhC6LIAZrB5hrOYzS8bqQ", "expire_date": "2021-04-15T08:11:41.713Z"}}, {"model": "sessions.session", "pk": "a7zgl9fa6qem7tdeud8lpf2hdi6130ir", "fields": {"session_data": ".eJxVjEEOgjAQRe8ya9NMB2gZl-49Q9PCIFXTGgqJxnh3IWHD9r_3_hdckVJiTk7erzh94IwncH6ZR7cUmVzs4QwaDlvw3UPSBvq7T7esupzmKQa1KWqnRV1zL8_L7h4ORl_Gta4b21pNPrTG61AhDRQaQ9Ywa81sh1aQtDFVxTUPhgmJa-xQcC3XDn5_wjI81w:1lXIPA:lP61jwEQq2XpNu4FCJd7PtCkSd_3SiD26Ry5S0BN6kc", "expire_date": "2021-04-30T06:56:40.918Z"}}, {"model": "sites.site", "pk": 1, "fields": {"domain": "henriqueperoni.com", "name": "Henrique Peroni"}}, {"model": "account.emailaddress", "pk": 1, "fields": {"user": 1, "email": "henriqueperoni@hotmail.com", "verified": true, "primary": true}}, {"model": "projects.project", "pk": 1, "fields": {"name": "Read More For Less", "slug": "read-more-for-less", "description": "Read more for Less is a project where users can make a purchase to get a box of books, they can choose between single delivery or get a monthly delivery for one year. I felt there is a pain in the market with subscriptions, that some people don't do a subscription because they know it might be a pain to cancel it, in this project the user can buy a box of books for only one single month and if they like the service than they get can the annually plan. \r\n\r\nTo don't get any random book, users are able to set their preferences, such as genre, authors and books they enjoyed. Also, the website has a Book Club page, where users can create reviews about the books they are reading and discuss them with other users.", "description1": "Read more for Less is a project where users can make a purchase to get a box of books, they can choose between single delivery or get a monthly delivery for one year. I felt there is a pain in the market with subscriptions, that some people don't do a subscription because they know it might be a pain to cancel it, in this project the user can buy a box of books for only one single month and if they like the service than they get can the annually plan. To don't get any random book, users are able to set their preferences, such as genre, authors and books they enjoyed. Also, the website has a Book Club page, where users can create reviews about the books they are reading and discuss them with other users.", "description2": "Read more for Less is a project where users can make a purchase to get a box of books, they can choose between single delivery or get a monthly delivery for one year. I felt there is a pain in the market with subscriptions, that some people don't do a subscription because they know it might be a pain to cancel it, in this project the user can buy a box of books for only one single month and if they like the service than they get can the annually plan. To don't get any random book, users are able to set their preferences, such as genre, authors and books they enjoyed. Also, the website has a Book Club page, where users can create reviews about the books they are reading and discuss them with other users.", "live_site": "https://read-more-for-less.herokuapp.com/", "github": "https://github.com/Henriqueperoni/MS4-Read-More-For-Less", "description_image": "intro.readme.png", "description_image1": "home-page.png", "description_image2": "admin-edit.png"}}, {"model": "projects.project", "pk": 2, "fields": {"name": "Book's World", "slug": "books-world", "description": "Very <strong>Good</strong>121212", "description1": "", "description2": "", "live_site": "https://bookss-world.herokuapp.com/", "github": "https://github.com/Henriqueperoni/CI-MS3-Books-World", "description_image": "ms3-cover.png", "description_image1": "", "description_image2": ""}}, {"model": "contact.contact", "pk": 11, "fields": {"name": "Luana", "email": "lbatistip@hotmail.com", "message": "hola"}}, {"model": "contact.contact", "pk": 12, "fields": {"name": "Henrique Peroni", "email": "henriqueperoni@hotmail.com", "message": "dwqdwqd"}}, {"model": "blog.post", "pk": 1, "fields": {"author": 1, "title": "How to Create A Post With Django", "title_tag": "that is the title tag", "image": "", "slug": "how-to-create-a-post-with-django", "post_date": "2021-04-09T08:13:59.309Z", "status": 1, "likes_count": 0, "content": "<h2>Lest try a sub heading</h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>That&#39;s my first blog post</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>I&#39;m very happy</p>", "likes": [1]}}, {"model": "blog.post", "pk": 2, "fields": {"author": 1, "title": "Why Shoud I Do a Bootcamp?", "title_tag": "Here I listed the 5 reason you should do a bootcmap in 2021", "image": "bootcamp.jpg", "slug": "why-shoud-i-do-a-bootcamp", "post_date": "2021-04-09T09:49:23.656Z", "status": 0, "likes_count": 0, "content": "<p>The Government has approved plans to add the US and four European Union countries to the mandatory hotel quarantine list despite concerns over the system&rsquo;s capacity to handle the additional volume of inbound travellers.</p>\r\n\r\n<p>At an incorporeal Cabinet meeting on Friday night, Ministers added 16 countries to the list including Canada, Belgium, Italy, France and Luxembourg.</p>\r\n\r\n<p>The list will be expanded from next Thursday, although the inclusion of the US and Canada is subject to there being sufficient capacity in the system. Germany was removed from the list after new advice was received from the Travel Advisory Group.</p>\r\n\r\n<p>Measures to strengthen home quarantining were also agreed. Passengers flying in from countries not deemed to be of &ldquo;high-risk&rdquo; due to the circulation of Covid-19 variants must now have a day five Covid-19 test booked with the HSE, as well as a negative pre-flight PCR test. The Government is also to consider how to approach passengers who are fully vaccinated.</p>\r\n\r\n<p>The High Court will on Saturday hear an application from a woman who is seeking an inquiry into whether her detention in the system is lawful.</p>\r\n\r\n<p>The woman, who arrived from Israel this week, says she is fully vaccinated and has tested negative for Covid-19 twice in recent days. She argues that the regime amounts to a form of detention which breaches her constitutional right to liberty.</p>\r\n\r\n<p>Israel, Albania and St Lucia are to be removed from the list next week.</p>", "likes": [2]}}, {"model": "blog.post", "pk": 3, "fields": {"author": 1, "title": "How to Get Ideas to Write a Blog", "title_tag": "One of the hardest about create a blog is actually have content to write on it. So here is how I started", "image": "", "slug": "how-to-get-ideas-to-write-a-blog", "post_date": "2021-04-09T09:52:00.992Z", "status": 0, "likes_count": 0, "content": "<p>fewfewfew</p>", "likes": []}}, {"model": "blog.postcomment", "pk": 1, "fields": {"user": 1, "post": 3, "comment": "fewfwe", "date_commented": "2021-04-10T10:52:57Z"}}, {"model": "blog.postcomment", "pk": 2, "fields": {"user": 1, "post": 2, "comment": "That's the first comment on the post", "date_commented": "2021-04-11T06:42:04Z"}}, {"model": "blog.postcomment", "pk": 3, "fields": {"user": 1, "post": 2, "comment": "That's is the second one. And it's from the same person", "date_commented": "2021-04-11T06:42:30Z"}}, {"model": "blog.postcomment", "pk": 4, "fields": {"user": 1, "post": 1, "comment": "fewf", "date_commented": "2021-04-11T08:13:41.885Z"}}]
+[
+    {
+      "model": "admin.logentry",
+      "pk": 1,
+      "fields": {
+        "action_time": "2021-04-01T08:04:45.754Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "henriqueperoni.example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 2,
+      "fields": {
+        "action_time": "2021-04-01T08:05:04.554Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "henriqueperoni.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 3,
+      "fields": {
+        "action_time": "2021-04-01T08:11:04.426Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "henriqueperoni@hotmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Verified\", \"Primary\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 4,
+      "fields": {
+        "action_time": "2021-04-02T14:00:51.010Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 5,
+      "fields": {
+        "action_time": "2021-04-02T14:13:35.050Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 6,
+      "fields": {
+        "action_time": "2021-04-02T14:16:58.805Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 7,
+      "fields": {
+        "action_time": "2021-04-02T14:17:30.850Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 8,
+      "fields": {
+        "action_time": "2021-04-02T15:28:08.057Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 9,
+      "fields": {
+        "action_time": "2021-04-02T15:30:16.788Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 10,
+      "fields": {
+        "action_time": "2021-04-02T15:52:50.394Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 11,
+      "fields": {
+        "action_time": "2021-04-03T07:47:34.009Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 12,
+      "fields": {
+        "action_time": "2021-04-03T07:55:35.167Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 13,
+      "fields": {
+        "action_time": "2021-04-03T07:56:40.799Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 14,
+      "fields": {
+        "action_time": "2021-04-03T08:02:11.215Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 15,
+      "fields": {
+        "action_time": "2021-04-03T08:03:47.322Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 2,
+        "change_message": "[]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 16,
+      "fields": {
+        "action_time": "2021-04-03T16:13:51.739Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 17,
+      "fields": {
+        "action_time": "2021-04-05T06:26:56.020Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 18,
+      "fields": {
+        "action_time": "2021-04-05T06:30:58.816Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image1\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 19,
+      "fields": {
+        "action_time": "2021-04-05T06:34:20.643Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 20,
+      "fields": {
+        "action_time": "2021-04-05T06:35:02.213Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\", \"Description image1\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 21,
+      "fields": {
+        "action_time": "2021-04-05T06:35:17.844Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\", \"Description image1\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 22,
+      "fields": {
+        "action_time": "2021-04-05T06:35:42.113Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image1\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 23,
+      "fields": {
+        "action_time": "2021-04-05T06:36:11.843Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\", \"Description image1\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 24,
+      "fields": {
+        "action_time": "2021-04-05T06:36:23.657Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 25,
+      "fields": {
+        "action_time": "2021-04-05T06:38:11.733Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description1\", \"Description2\", \"Description image2\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 26,
+      "fields": {
+        "action_time": "2021-04-05T06:39:36.565Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 27,
+      "fields": {
+        "action_time": "2021-04-05T06:46:09.841Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 28,
+      "fields": {
+        "action_time": "2021-04-05T06:46:58.722Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 29,
+      "fields": {
+        "action_time": "2021-04-05T06:55:56.105Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 30,
+      "fields": {
+        "action_time": "2021-04-05T06:56:50.749Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description image\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 31,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.300Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "10",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 32,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.303Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "9",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 33,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.305Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "8",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 34,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.306Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "7",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 35,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.307Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "6",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 36,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.308Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "5",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 37,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.309Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "4",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 38,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.311Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "3",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 39,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.312Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 40,
+      "fields": {
+        "action_time": "2021-04-09T06:36:40.313Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Contact form from Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 41,
+      "fields": {
+        "action_time": "2021-04-09T07:10:53.080Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Book's World",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 42,
+      "fields": {
+        "action_time": "2021-04-09T07:22:44.597Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 43,
+      "fields": {
+        "action_time": "2021-04-09T07:23:52.672Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 44,
+      "fields": {
+        "action_time": "2021-04-09T07:24:45.866Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 45,
+      "fields": {
+        "action_time": "2021-04-09T07:26:16.407Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 46,
+      "fields": {
+        "action_time": "2021-04-09T07:27:05.341Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 47,
+      "fields": {
+        "action_time": "2021-04-09T07:28:39.364Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 48,
+      "fields": {
+        "action_time": "2021-04-09T07:29:26.995Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Read More For Less",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 73,
+      "fields": {
+        "action_time": "2021-04-14T06:49:51.893Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "Henrique Peroni1",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 74,
+      "fields": {
+        "action_time": "2021-04-14T06:49:51.895Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Henrique Peroni",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 75,
+      "fields": {
+        "action_time": "2021-04-14T08:17:55.086Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Book's World1",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 76,
+      "fields": {
+        "action_time": "2021-04-14T10:08:02.053Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "5",
+        "object_repr": "Book's World",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 77,
+      "fields": {
+        "action_time": "2021-04-14T10:08:02.054Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "Book's World1",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 78,
+      "fields": {
+        "action_time": "2021-04-14T10:08:36.675Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "6",
+        "object_repr": "Book's World",
+        "action_flag": 3,
+        "change_message": ""
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 1,
+      "fields": {
+        "password": "pbkdf2_sha256$216000$rsY4jpCdy2lg$25iatSXLRriBl3pLtQwrqVMpxfXLT6iqkhApI0+jpw4=",
+        "last_login": "2021-04-16T06:56:40.915Z",
+        "is_superuser": true,
+        "username": "henrique",
+        "first_name": "",
+        "last_name": "",
+        "email": "henriqueperoni@hotmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-04-01T07:49:58.228Z",
+        "groups": [],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 2,
+      "fields": {
+        "password": "pbkdf2_sha256$216000$wgIWPdt6ngle$sB3pstN5kRTfm7Ncw0XZtkY//uJK0JACiQ8WHyYdros=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hila",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-04-12T13:18:28.314Z",
+        "groups": [],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "6qns2fi7rw48v5esowce199yuq16qecv",
+      "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWmmA7QMS_eeoWlhkKppSQuJxnh3IWGh2__e-29h3bpMdi2cbRhEJ5Q4_W7e9XeOOxhuLl6T7FNccvByV-RBi7ykgR_nw_07mFyZtrpuTGsUOt9qp3wFOKJvNBpNpBSRGVsGVFpXFdU0akJAqqEHhq3cuv20cCkhRcvPOeSX6ODzBRO0PNc:1lRsQX:lW1gCanuTg3ic_qIokv1SLMhC6LIAZrB5hrOYzS8bqQ",
+        "expire_date": "2021-04-15T08:11:41.713Z"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "a7zgl9fa6qem7tdeud8lpf2hdi6130ir",
+      "fields": {
+        "session_data": ".eJxVjEEOgjAQRe8ya9NMB2gZl-49Q9PCIFXTGgqJxnh3IWHD9r_3_hdckVJiTk7erzh94IwncH6ZR7cUmVzs4QwaDlvw3UPSBvq7T7esupzmKQa1KWqnRV1zL8_L7h4ORl_Gta4b21pNPrTG61AhDRQaQ9Ywa81sh1aQtDFVxTUPhgmJa-xQcC3XDn5_wjI81w:1lXIPA:lP61jwEQq2XpNu4FCJd7PtCkSd_3SiD26Ry5S0BN6kc",
+        "expire_date": "2021-04-30T06:56:40.918Z"
+      }
+    },
+    {
+      "model": "sites.site",
+      "pk": 1,
+      "fields": {
+        "domain": "henriqueperoni.com",
+        "name": "Henrique Peroni"
+      }
+    },
+    {
+      "model": "account.emailaddress",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "email": "henriqueperoni@hotmail.com",
+        "verified": true,
+        "primary": true
+      }
+    },
+    {
+      "model": "projects.project",
+      "pk": 1,
+      "fields": {
+        "name": "Read More For Less",
+        "slug": "read-more-for-less",
+        "description": "Read more for Less is a project where users can make a purchase to get a box of books, they can choose between single delivery or get a monthly delivery for one year. I felt there is a pain in the market with subscriptions, that some people don't do a subscription because they know it might be a pain to cancel it, in this project the user can buy a box of books for only one single month and if they like the service than they get can the annually plan. \r\n\r\nTo don't get any random book, users are able to set their preferences, such as genre, authors and books they enjoyed. Also, the website has a Book Club page, where users can create reviews about the books they are reading and discuss them with other users.",
+        "description1": "Read more for Less is a project where users can make a purchase to get a box of books, they can choose between single delivery or get a monthly delivery for one year. I felt there is a pain in the market with subscriptions, that some people don't do a subscription because they know it might be a pain to cancel it, in this project the user can buy a box of books for only one single month and if they like the service than they get can the annually plan. To don't get any random book, users are able to set their preferences, such as genre, authors and books they enjoyed. Also, the website has a Book Club page, where users can create reviews about the books they are reading and discuss them with other users.",
+        "description2": "Read more for Less is a project where users can make a purchase to get a box of books, they can choose between single delivery or get a monthly delivery for one year. I felt there is a pain in the market with subscriptions, that some people don't do a subscription because they know it might be a pain to cancel it, in this project the user can buy a box of books for only one single month and if they like the service than they get can the annually plan. To don't get any random book, users are able to set their preferences, such as genre, authors and books they enjoyed. Also, the website has a Book Club page, where users can create reviews about the books they are reading and discuss them with other users.",
+        "live_site": "https://read-more-for-less.herokuapp.com/",
+        "github": "https://github.com/Henriqueperoni/MS4-Read-More-For-Less",
+        "description_image": "intro.readme.png",
+        "description_image1": "home-page.png",
+        "description_image2": "admin-edit.png"
+      }
+    },
+    {
+      "model": "projects.project",
+      "pk": 2,
+      "fields": {
+        "name": "Book's World",
+        "slug": "books-world",
+        "description": "Very <strong>Good</strong>121212",
+        "description1": "",
+        "description2": "",
+        "live_site": "https://bookss-world.herokuapp.com/",
+        "github": "https://github.com/Henriqueperoni/CI-MS3-Books-World",
+        "description_image": "ms3-cover.png",
+        "description_image1": "",
+        "description_image2": ""
+      }
+    },
+    {
+      "model": "contact.contact",
+      "pk": 11,
+      "fields": {
+        "name": "Luana",
+        "email": "lbatistip@hotmail.com",
+        "message": "hola"
+      }
+    },
+    {
+      "model": "contact.contact",
+      "pk": 12,
+      "fields": {
+        "name": "Henrique Peroni",
+        "email": "henriqueperoni@hotmail.com",
+        "message": "dwqdwqd"
+      }
+    },
+    {
+      "model": "blog.post",
+      "pk": 1,
+      "fields": {
+        "author": 1,
+        "title": "How to Create A Post With Django",
+        "title_tag": "that is the title tag",
+        "image": "",
+        "slug": "how-to-create-a-post-with-django",
+        "post_date": "2021-04-09T08:13:59.309Z",
+        "status": 1,
+        "likes_count": 0,
+        "content": "<h2>Lest try a sub heading</h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>That&#39;s my first blog post</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>I&#39;m very happy</p>",
+        "likes": [
+          1
+        ]
+      }
+    },
+    {
+      "model": "blog.post",
+      "pk": 2,
+      "fields": {
+        "author": 1,
+        "title": "Why Shoud I Do a Bootcamp?",
+        "title_tag": "Here I listed the 5 reason you should do a bootcmap in 2021",
+        "image": "bootcamp.jpg",
+        "slug": "why-shoud-i-do-a-bootcamp",
+        "post_date": "2021-04-09T09:49:23.656Z",
+        "status": 0,
+        "likes_count": 0,
+        "content": "<p>The Government has approved plans to add the US and four European Union countries to the mandatory hotel quarantine list despite concerns over the system&rsquo;s capacity to handle the additional volume of inbound travellers.</p>\r\n\r\n<p>At an incorporeal Cabinet meeting on Friday night, Ministers added 16 countries to the list including Canada, Belgium, Italy, France and Luxembourg.</p>\r\n\r\n<p>The list will be expanded from next Thursday, although the inclusion of the US and Canada is subject to there being sufficient capacity in the system. Germany was removed from the list after new advice was received from the Travel Advisory Group.</p>\r\n\r\n<p>Measures to strengthen home quarantining were also agreed. Passengers flying in from countries not deemed to be of &ldquo;high-risk&rdquo; due to the circulation of Covid-19 variants must now have a day five Covid-19 test booked with the HSE, as well as a negative pre-flight PCR test. The Government is also to consider how to approach passengers who are fully vaccinated.</p>\r\n\r\n<p>The High Court will on Saturday hear an application from a woman who is seeking an inquiry into whether her detention in the system is lawful.</p>\r\n\r\n<p>The woman, who arrived from Israel this week, says she is fully vaccinated and has tested negative for Covid-19 twice in recent days. She argues that the regime amounts to a form of detention which breaches her constitutional right to liberty.</p>\r\n\r\n<p>Israel, Albania and St Lucia are to be removed from the list next week.</p>",
+        "likes": [
+          2
+        ]
+      }
+    },
+    {
+      "model": "blog.post",
+      "pk": 3,
+      "fields": {
+        "author": 1,
+        "title": "How to Get Ideas to Write a Blog",
+        "title_tag": "One of the hardest about create a blog is actually have content to write on it. So here is how I started",
+        "image": "",
+        "slug": "how-to-get-ideas-to-write-a-blog",
+        "post_date": "2021-04-09T09:52:00.992Z",
+        "status": 0,
+        "likes_count": 0,
+        "content": "<p>fewfewfew</p>",
+        "likes": []
+      }
+    },
+    {
+      "model": "blog.postcomment",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "post": 3,
+        "comment": "fewfwe",
+        "date_commented": "2021-04-10T10:52:57Z"
+      }
+    },
+    {
+      "model": "blog.postcomment",
+      "pk": 2,
+      "fields": {
+        "user": 1,
+        "post": 2,
+        "comment": "That's the first comment on the post",
+        "date_commented": "2021-04-11T06:42:04Z"
+      }
+    },
+    {
+      "model": "blog.postcomment",
+      "pk": 3,
+      "fields": {
+        "user": 1,
+        "post": 2,
+        "comment": "That's is the second one. And it's from the same person",
+        "date_commented": "2021-04-11T06:42:30Z"
+      }
+    },
+    {
+      "model": "blog.postcomment",
+      "pk": 4,
+      "fields": {
+        "user": 1,
+        "post": 1,
+        "comment": "fewf",
+        "date_commented": "2021-04-11T08:13:41.885Z"
+      }
+    }
+  ]

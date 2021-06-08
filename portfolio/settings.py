@@ -33,7 +33,7 @@ if 'DEVELOPMENT' in os.environ:
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ['henrique-peroni.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['henrique-peroni.herokuapp.com', 'localhost', '127.0.0.1', 'henriqueperoni.com', 'www.henriqueperoni.com']
 
 # Application definition
 

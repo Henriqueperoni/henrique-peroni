@@ -61,7 +61,7 @@ svg {
     position: relative;
 }
 
-.about > h2 {
+.about > h2, .skills > h2 {
     display: flex;
     justify-content: center;
 }
@@ -103,6 +103,40 @@ svg {
     stroke-dasharray: 5500;
     stroke-dashoffset: 0;
 }
+
+/* Skills */
+.skills-container {
+    margin: 5rem auto;
+}
+
+ .skill-icons {
+    display: flex;
+    justify-content: center;
+    margin: -30px 0;
+}
+
+.skill-icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    background: var(--bg-grey);
+    margin: 0px 30px;
+    transform: rotate(45deg)
+}
+
+.icons-right {
+    margin-left: 180px;
+}
+
+.skills-container div img{
+    width: 70px;
+    transform: rotate( -45deg)
+}
+
+
+
 
 @media screen and (max-width: 992px) {
     .intro {

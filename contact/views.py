@@ -9,15 +9,14 @@ from .forms import ContactForm
 
 def contact(request):
     """ A view to return the contact form """
-    
+
     if request.method == 'POST':
-        print('request')
         form = ContactForm(request.POST)
+
         if form.is_valid():
             message = request.POST.get('message')
             contact_email = request.POST.get('email')
             form.save()
-            print('Form valid')
 
             email = EmailMessage(
                 "New contact form submited",
@@ -27,15 +26,13 @@ def contact(request):
                 reply_to=[contact_email],
             )
             try:
-                email.send(fail_silently=False) 
+                email.send(fail_silently=False)
             except Exception:
-                print('Failed')
 
                 return redirect(reverse('contact'))
         else:
             print('Form invalid')
     else:
-        print('luna')
         form = ContactForm()
 
     context = {

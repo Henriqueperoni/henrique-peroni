@@ -109,20 +109,21 @@ svg {
     margin: 5rem auto;
 }
 
- .skill-icons {
+ .skill-line {
     display: flex;
     justify-content: center;
     margin: -30px 0;
 }
 
-.skill-icons div{
+.skill-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
     width: 120px;
-    background: var(--bg-grey);
+    background: var(--off-white);
     margin: 0px 30px;
+    cursor: pointer;
     transform: rotate(45deg)
 }
 
@@ -130,12 +131,15 @@ svg {
     margin-left: 180px;
 }
 
-.skills-container div img{
+.skill-icons img{
     width: 70px;
-    transform: rotate( -45deg)
+    transform: rotate( -45deg);
+    transition: .3s
 }
 
-
+.skill-icons:hover > .icon {
+    width: 90px;
+}
 
 
 @media screen and (max-width: 992px) {

@@ -106,7 +106,7 @@ svg {
 
 /* Skills */
 .skills-container {
-    margin: 5rem 0 0 -90px;
+    margin: 5rem 0 7rem -90px;
 }
 
 .skill-line {
@@ -197,7 +197,7 @@ svg {
     }
 
     .skills-container {
-        margin: 5rem 0 0 -60px;
+        margin: 5rem 0 5rem -60px;
     }
 
     .skill-line {

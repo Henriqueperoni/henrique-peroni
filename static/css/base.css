@@ -25,6 +25,9 @@ body {
 a {
     text-decoration: none;
 }
+.django-ckeditor-widget{
+    width: 50px !important;
+  }
 
 .display-none {
     display: none;

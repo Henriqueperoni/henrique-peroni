@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -12,7 +13,8 @@ class Project(models.Model):
     name = models.CharField(
         max_length=50, null=False, blank=False, unique=True)
     slug = models.CharField(max_length=256, blank=True, unique=True)
-    description = models.TextField(max_length=1000, null=False, blank=False)
+    description = RichTextField(
+        max_length=5000, null=False, blank=False)
     description1 = models.TextField(max_length=1000, null=True, blank=True)
     description2 = models.TextField(max_length=1000, null=True, blank=True)
     live_site = models.URLField(max_length=200, null=False, blank=False)

@@ -1,5 +1,5 @@
 const projectAnim = gsap.timeline({ defaults: { ease: "power1.out" } });
-if (window.location.href === "http://127.0.0.1:8000/projects/" || window.location.href === "http://127.0.0.1:8000/projects/") {
+if (window.location.href === "http://127.0.0.1:8000/projects/" || window.location.href === "http://www.henriqueperoni.com/projects/") {
   projectAnim.from(".projects", { y: 200, duration: 1 });
   projectAnim.from(
     "body > div > div:nth-child(2) > div.image-wrapper ",

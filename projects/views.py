@@ -9,7 +9,7 @@ from .forms import PostForm
 
 def projects(request):
     """ A view to return all projects """
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('-date_posted')
 
     context = {
         'projects': projects,

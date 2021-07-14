@@ -7,10 +7,8 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Project
-        fields = ('name', 'description', 'description1',
-                  'description2', 'live_site', 'github',
-                  'description_image', 'description_image1',
-                  'description_image2')
+        fields = ('name', 'description', 'live_site',
+                  'github', 'thumbnail_image',)
 
         description_image = forms.ImageField(label='Image',
                                              required=True,
@@ -25,13 +23,9 @@ class PostForm(forms.ModelForm):
         placeholders = {
             'name': 'Post Title',
             'description': 'Description',
-            'description1': 'Description 1',
-            'description2': 'Description 2',
             'live_site': 'Live Site URL',
             'github': 'GitHub URL',
-            'description_image': 'Description Image 1',
-            'description_image1': 'Description Image 2',
-            'description_image2': 'Description Image 3',
+            'thumbnail_image': 'Thumbnail Image',
         }
 
         self.fields['name'].widget.attrs['autofocus'] = True

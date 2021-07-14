@@ -30,16 +30,8 @@
 
             <!-- Project descriptions with images -->
             <div class="project-description">
-                <img src="{{ project.description_image.url }}" alt="">
+                <img src="{{ project.thumbnail_image.url }}" alt="">
                 <p>{{ project.description|safe }}</p>
-                {% if project.description_image1 %}
-                    <img src="{{ project.description_image1.url }}" alt="">
-                    <p>{{ project.description1 }}</p>
-                {% endif %}
-                {% if project.description_image2 %}
-                    <img src="{{ project.description_image2.url }}" alt="">
-                    <p>{{ project.description1 }}</p>
-                {% endif %}
             </div>
         </div>
         <!-- Modal Delete -->

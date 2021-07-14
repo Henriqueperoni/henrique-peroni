@@ -9,7 +9,8 @@
 }
 
 .project {
-    margin-bottom: 5rem;
+    margin: 0rem auto 5rem auto;
+    max-width: 1150px;
 }
 
 .add-project, .return-btn {
@@ -282,7 +283,6 @@ form {
     right: -35px;
 }
 
-
 @media screen and (max-width: 992px) {
     .projects {
         padding: 5rem 3rem 2rem 3rem;
@@ -295,7 +295,6 @@ form {
     .project-detail-container {
         padding: 5rem 3rem;
     }
-
 }
 
 @media screen and (max-width: 576px) {

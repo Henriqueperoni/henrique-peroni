@@ -8,9 +8,19 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="porfolio, freelance, software engineer, web developer" />
+        <meta name="author" content="Henrique Peroni"/>
+        <meta name="Description" content="Porfolio website to show case previous projects"/>
     {% endblock%}
     <!-- Extra Meta block -->
     {% block extra_meta %}
+    {% endblock %}
+
+    <!-- Favicon block -->
+    {% block favicons %}
+        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ MEDIA_URL }}favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicon-16x16.png">
     {% endblock %}
 
     <!-- CSS block -->

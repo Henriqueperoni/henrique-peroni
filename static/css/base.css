@@ -228,6 +228,21 @@ nav h3 {
     z-index: 500;
 }
 
+.message-container.delete-message {
+    opacity: 0;
+    animation: closingmodal 0.5s;
+}
+
+@keyframes closingmodal {
+    from {
+        opacity: 1;
+       
+    }
+    to {
+        opacity: 0; 
+    }
+}
+
 .close-message {
     width: 35px;
     height: 35px;

@@ -25,3 +25,16 @@ const navSlide = () => {
 }
 
 navSlide()
+
+// Close message container
+function closeMessage() {
+    const message = document.querySelector(".message-container")
+    message.classList.add('delete-message')
+    console.log('close')
+}
+
+const closeMessageBtn = document.querySelector(".close-message")
+
+closeMessageBtn.addEventListener("click", () => {
+    closeMessage()
+})

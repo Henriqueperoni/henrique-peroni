@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.core.mail import EmailMessage
 from django.conf import settings
+from django.contrib import messages
 
 from .forms import ContactForm
 
@@ -30,6 +31,7 @@ def contact(request):
             )
             try:
                 email.send(fail_silently=False)
+                messages.success(request, 'Email successful sent.')
             except Exception as e:
                 print(f'Email failed, error: {e}')
             return redirect(reverse('contact'))

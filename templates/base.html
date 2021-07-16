@@ -34,7 +34,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     {% endblock %} 
 
     <!-- Extra CSS block -->
@@ -64,8 +64,13 @@
             </nav>
         </header>
 
-        {% if messages%}
+        {% if messages %}
             <div class="message-container">
+                {% for message in messages %}
+                
+                    <p style="color:white">{{ message }}</p>
+                    
+                {% endfor %}
             </div>
         {% endif %}
 

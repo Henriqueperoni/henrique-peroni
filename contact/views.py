@@ -19,17 +19,20 @@ def contact(request):
             form.save()
 
             email = EmailMessage(
-                "New contact form submited",
-                message,
+                "New contact form submited at Henrique Peroni website",
+                'You have a new contact form available to you on '
+                f'henriqueperoni.com from {contact_email}. \n\n\n \
+                    Customer Query:'
+                f'\n\n{message}',
                 settings.DEFAULT_FROM_EMAIL,
                 [settings.DEFAULT_FROM_EMAIL],
                 reply_to=[contact_email],
             )
             try:
                 email.send(fail_silently=False)
-            except Exception:
-
-                return redirect(reverse('contact'))
+            except Exception as e:
+                print(f'Email failed, error: {e}')
+            return redirect(reverse('contact'))
         else:
             print('Form invalid')
     else:

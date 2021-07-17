@@ -31,8 +31,11 @@ def contact(request):
             )
             try:
                 email.send(fail_silently=False)
-                messages.success(request, 'Email successful sent.')
+                messages.error(request, 'Contact request failed. Please, \
+                    ensure the form is valid!')
             except Exception as e:
+                messages.error(request, 'Contact request failed. Please, \
+                    ensure the form is valid!')
                 print(f'Email failed, error: {e}')
             return redirect(reverse('contact'))
         else:

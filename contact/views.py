@@ -31,8 +31,8 @@ def contact(request):
             )
             try:
                 email.send(fail_silently=False)
-                messages.error(request, 'Contact request failed. Please, \
-                    ensure the form is valid!')
+                messages.success(
+                    request, 'Email sent. I will be in touch soon.')
             except Exception as e:
                 messages.error(request, 'Contact request failed. Please, \
                     ensure the form is valid!')

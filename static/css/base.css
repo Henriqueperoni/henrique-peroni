@@ -377,4 +377,20 @@ nav h3 {
         width: 92%;
     }
 
+    .message-container {
+        left: 50%;
+        top: 95px;
+        transform: translateX(-50%);
+    }
+
+    @keyframes closingmessage {
+        from {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+        to {
+            opacity: 0;
+            transform: translate(-50%, -200%);
+        }
+    }
 }

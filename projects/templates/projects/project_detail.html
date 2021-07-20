@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="{% static 'projects/css/projects.css' %}">
 {% endblock %}
 
+{% block extra_title %}{{ project.name }}{% endblock %}
+
 {% block content %}
     <div class="project-detail-container">
         <div class="project-detail">

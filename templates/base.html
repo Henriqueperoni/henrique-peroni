@@ -34,7 +34,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     {% endblock %} 
 
     <!-- Extra CSS block -->
@@ -51,10 +51,18 @@
                     <h3>Henrique Peroni</h3>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="{% url 'home' %}#about">About</a></li>
-                    <li><a href="{% url 'projects' %}">Portfolio</a></li>
-                    <li class="display-none" ><a href="{% url 'blog' %}">Blog</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li>
+                        <a href="{% url 'home' %}#about">About</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'projects' %}">Portfolio</a>
+                    </li>
+                    <li class="display-none"><a href="{% url 'blog' %}">Blog</a>
+                        <div class="underline-nav"></div>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </li>
                 </ul>
                 <div class="burger">
                     <div class="burger-line1"></div>

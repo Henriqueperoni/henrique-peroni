@@ -60,6 +60,10 @@ a {
 }
 
 /* Navbar */
+.nav-item-active {
+    border-bottom: solid 2px;
+}
+
 nav {
     display: flex;
     align-items: center;

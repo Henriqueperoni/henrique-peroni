@@ -3,7 +3,7 @@ const introAnim = gsap.timeline({ defaults: { ease: "power1.out" } });
 introAnim.to(".greeting", { y: "0%", duration: 1, delay: 0.2, stagger: 0.4 });
 introAnim.to(
   ".intro-image",
-  { transform: "scale(1.5)", opacity: 1, duration: 1 },
+  { transform: "scale(1.3)", opacity: 1, duration: 1.2 },
   "=-1"
 );
 introAnim.fromTo(

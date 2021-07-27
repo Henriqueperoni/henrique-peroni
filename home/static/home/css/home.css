@@ -38,6 +38,10 @@ h2 {
     justify-content: center;
 }
 
+.image-wrapper img {
+    width: 90%;
+}
+
 svg {
     position: absolute;
     left: 0;
@@ -142,6 +146,11 @@ svg {
     width: 90px;
 }
 
+@media screen and (max-width: 1200px) {
+    .image-wrapper img {
+        width: 80%;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .intro {

@@ -2,7 +2,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6KNH1HBZ4"></script>
     <script>
@@ -14,12 +15,15 @@
     </script>
     <!-- Meta block -->
     {% block meta%}
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="porfolio, freelance, software engineer, web developer" />
-        <meta name="author" content="Henrique Peroni"/>
-        <meta name="description" content="A Software Engineer with Python, Django/Flask skills looking for a new challenge. If you are looking for a new developer to join your team or need a freelance, have a look."/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="porfolio, freelance, software engineer, web developer" />
+    <meta name="author" content="Henrique Peroni" />
+    <meta name="description"
+        content="A Software Engineer with Python, Django/Flask skills looking for a new challenge. If you are looking for a new developer to join your team or need a freelance, have a look." />
+    <meta property="og:image" content="{{ MEDIA_URL }}social-preview.png">
+
     {% endblock%}
     <!-- Extra Meta block -->
     {% block extra_meta %}
@@ -27,24 +31,20 @@
 
     <!-- Favicon block -->
     {% block favicons %}
-        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ MEDIA_URL }}favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ MEDIA_URL }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicon-16x16.png">
     {% endblock %}
 
     <!-- CSS block -->
     {% block corecss %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Lobster&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    {% endblock %} 
+    {% endblock %}
 
     <!-- Extra CSS block -->
     {% block extra_css %}
@@ -52,75 +52,77 @@
 
     <!-- Page title -->
     <title>{% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-        <header>
-            <nav>
-                <a href="{% url 'home' %}">
-                    <h3>Henrique Peroni</h3>
-                </a>
-                <ul class="nav-links">
-                    <li>
-                        <a href="{% url 'home' %}#about">About</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'projects' %}">Portfolio</a>
-                    </li>
-                    <li class="display-none"><a href="{% url 'blog' %}">Blog</a>
-                        <div class="underline-nav"></div>
-                    </li>
-                    <li>
-                        <a href="{% url 'contact' %}">Contact</a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <div class="burger-line1"></div>
-                    <div class="burger-line2"></div>
-                    <div class="burger-line3"></div>
-                </div>
-            </nav>
-        </header>
+</head>
 
-        {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        <div class="messages error-message">
-                            <h4><i class="fas fa-times"></i> Error</h4>
-                            <p>{{ message }}</p>
-                        </div>
-                    {% elif level == 30 %}
-                    {% elif level == 25 %}
-                        <div class="messages success-message">
-                            <h4><i class="fas fa-check"></i> Success!</h4>
-                            <p>{{ message }}</p>
-                        </div>
-                    {% else %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-            <button class="close-message">x</button>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">
+                <h3>Henrique Peroni</h3>
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="{% url 'home' %}#about">About</a>
+                </li>
+                <li>
+                    <a href="{% url 'projects' %}">Portfolio</a>
+                </li>
+                <li class="display-none"><a href="{% url 'blog' %}">Blog</a>
+                    <div class="underline-nav"></div>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">Contact</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        <div class="messages error-message">
+            <h4><i class="fas fa-times"></i> Error</h4>
+            <p>{{ message }}</p>
         </div>
+        {% elif level == 30 %}
+        {% elif level == 25 %}
+        <div class="messages success-message">
+            <h4><i class="fas fa-check"></i> Success!</h4>
+            <p>{{ message }}</p>
+        </div>
+        {% else %}
         {% endif %}
+        {% endwith %}
+        {% endfor %}
+        <button class="close-message">x</button>
+    </div>
+    {% endif %}
 
-        {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-        <!-- JS block -->
-        {% block corejs %}
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-            </script>
-        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <!-- JS block -->
+    {% block corejs %}
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
             </script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-        <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
-        {% endblock %}
-        <!-- Extra JS -->
-        {% block extra_js %}
-        {% endblock %}
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
+    <!-- Extra JS -->
+    {% block extra_js %}
+    {% endblock %}
+</body>
+
 </html>
